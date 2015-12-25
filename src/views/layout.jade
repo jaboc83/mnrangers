@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		title= title
+
+		// metadata
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(name='description', content='Minnesota Rangers Basketball Official Website')
+		meta(name='keywords', content='basketball, rangers, minnesota, mn, mnrangers, midwest basketball league')
+
+		// stylesheets
+		link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+
+		// icons
+		link(rel='shortcut icon', type='image/x-icon', href='https://secure.gravatar.com/blavatar/389d5f139f23443f614caa6aea278d55?s=16', sizes='16x16')
+		link(rel='icon', type='image/x-icon', href='https://secure.gravatar.com/blavatar/389d5f139f23443f614caa6aea278d55?s=16', sizes='16x16')
+		link(rel='apple-touch-icon-precomposed', href='https://secure.gravatar.com/blavatar/b054b3a116bb7ca704f760d6dca6ae72?s=114')
+
+		// scripts
+		//- Allow :active styles to work in CSS on a page in mobile safari
+		script.
+			document.addEventListener("touchstart", function(){}, true);
+	body
+		div.container
+			div#header
+			div#banner
+			div#main-content
+				block content
+			div#footer-section
+			div#copyright
+				p © 2015 Minnesota Rangers. All Rights Reserved | Design by 
+					a(href='http://www.unsignedbytes.com/') UnsignedBytes, LLC

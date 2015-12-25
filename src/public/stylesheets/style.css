@@ -1,13 +1,43 @@
 html, body {
 	font-family: 'Roboto-Regular';
 	font-size: 100%;
-	background: url(../images/bg.png) repeat 0 0;
+	background: url(../images/m.png) repeat 0 0;
 	margin: 0;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
-	line-height: 1.4em;
 	color: #333;
 }
 
+/** MOBILE PORTRAIT **/
+@media only screen and (max-device-width: 320px) {
+	body {
+		line-height: 1.4em;
+	}
+
+	#subheading {
+
+	}
+
+}
+
+/** MOBILE LANDSCAPE **/
+@media only screen and (min-device-width: 321px) {
+
+}
+
+/** TABLET PORTRAIT **/
+@media only screen and (min-device-width: 768px)
+	and (max-device-width: 1024px)
+	and (orientation: portrait) {
+
+}
+
+
+/** TABLET LANDSCAPE **/
+@media only screen and (min-device-width: 768px)
+	and (max-device-width: 1024px)
+	and (orientation: landscape) {
+
+}

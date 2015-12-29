@@ -4,7 +4,7 @@
 }
 
 html, body {
-	font-family: 'Roboto-Regular', serif;
+	font-family: 'Bitter', serif;
 	font-size: 100%;
 	background: url(../images/m.png) repeat 0 0;
 	height: 100%;
@@ -24,6 +24,10 @@ a, a:hover, a:visited {
 	text-decoration: none;
 }
 
+h3 {
+	font-size: 1.8em;
+}
+
 .container {
 	height: 100%;
 	width: 100%;
@@ -31,7 +35,6 @@ a, a:hover, a:visited {
 }
 
 #header {
-	font-family: 'Bitter', serif;
 	background-color: #000;
 	display: flex;
 	flex-flow: row wrap;
@@ -72,6 +75,7 @@ a, a:hover, a:visited {
 }
 
 #mission-statement {
+	font-family: 'Roboto-Regular', serif;
 	color: #DDD;
 	display: none;
 	float: right;
@@ -96,6 +100,7 @@ a, a:hover, a:visited {
 }
 
 @media only screen and (max-device-width: 400px) {
+
 	#header {
 		height: 5em;
 	}
@@ -104,7 +109,7 @@ a, a:hover, a:visited {
 		line-height: 2.3
 	}
 
-	.container {
+	.cgntainer {
 		max-width: 320px;
 		margin: 0 auto;
 	}
@@ -123,7 +128,7 @@ a, a:hover, a:visited {
 
 	#banner {
 		background-position-y: -2.8em;
-		margin-bottom: -3em;
+		height: 10em
 	}
 
 	#header-text {
@@ -151,7 +156,7 @@ a, a:hover, a:visited {
 
 	#banner {
 		background-position-y: -2.8em;
-		margin-bottom: -3em;
+		height: 11.5em
 	}
 
 	#header-text {
@@ -178,7 +183,7 @@ a, a:hover, a:visited {
 
 	#banner {
 		background-position-y: -2.8em;
-		margin-bottom: -3em;
+		height: 11.5em
 	}
 
 	.container {
@@ -201,7 +206,6 @@ a, a:hover, a:visited {
 
 	#banner {
 		background-position-y: -5em;
-		margin-bottom: -2em;
 	}
 
 	.container {
@@ -231,7 +235,6 @@ a, a:hover, a:visited {
 
 	#banner {
 		background-position-y: -5em;
-		margin-bottom: -2em;
 	}
 
 	.container {
@@ -261,8 +264,7 @@ a, a:hover, a:visited {
 
 	#banner {
 		background-position-y: -5em;
-		margin-bottom: -2em;
-		height: 20em;
+		height: 19.4em;
 	}
 
 	.container {
@@ -292,8 +294,7 @@ a, a:hover, a:visited {
 
 	#banner {
 		background-position-y: -5em;
-		margin-bottom: -2em;
-		height: 20em
+		height: 19.4em
 	}
 
 	.container {

@@ -1,25 +1,47 @@
 extends layout
 
 block content
-	div#game-track
-		#prev-game.game-summary
-			.date DEC 12 2015 4:00PM
-			.matchup 
-				span.away-team MN Rangers 
-				span.at @ 
-				span.home-team IA Hornets
-			.results 
-				span.score (113 - 119) 
-				span.outcome.loss L
-		#current-game.game-summary
-			.date SAT 23 APRIL 12:00PM 
-			.matchup 
-				span.away-team MN Broncos 
-				span.at @ 
-				span.home-team MN Rangers
-		#next-game.game-summary 
-			.date SAT 30 APRIL 10:00AM 
-			.matchup
-				span.away-team MN Rangers 
-				span.at @ 
-				span.home-team WI Storm
+	#schedule-snapshot
+		h3 Upcoming Games
+		#game-track
+			#prev-game.game-summary
+				.date DEC 12 2015 4:00PM
+				.matchup 
+					span.away-team: strong MN Rangers 
+					span.at @ 
+					span.home-team IA Hornets
+				.results 
+					span.score (113 - 119) 
+					span.outcome.loss L
+			#current-game.game-summary
+				.date SAT 23 APRIL 12:00PM 
+				.matchup 
+					span.away-team MN Broncos 
+					span.at @ 
+					span.home-team: strong MN Rangers
+			#next-game.game-summary 
+				.date SAT 30 APRIL 10:00AM 
+				.matchup
+					span.away-team: strong MN Rangers 
+					span.at @ 
+					span.home-team WI Storm
+	#latest-video
+		h3 Latest Video
+		.video(id='fb-root')
+			script.
+				(function(d, s, id) {  
+					var js, fjs = d.getElementsByTagName(s)[0];  
+					if (d.getElementById(id)) return;  
+					js = d.createElement(s); 
+					js.id = id;  
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			.fb-video(data-allowfullscreen='1' data-href='/MNRangersBasketball/videos/vb.798066073581304/949596008428309/?type=3')
+				.fb-xfbml-parse-ignore
+					blockquote(cite='https://www.facebook.com/MNRangersBasketball/videos/949596008428309/')
+						a(href='https://www.facebook.com/MNRangersBasketball/videos/949596008428309/')
+						p Rangers in training led by Jill Fisher. We love Fish!
+						p Posted by 
+							a(href='https://www.facebook.com/MNRangersBasketball/') Minnesota Rangers Basketball
+							on Saturday, December 19, 2015

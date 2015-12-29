@@ -1,5 +1,25 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	div#game-track
+		#prev-game.game-summary
+			.date DEC 12 2015 4:00PM
+			.matchup 
+				span.away-team MN Rangers 
+				span.at @ 
+				span.home-team IA Hornets
+			.results 
+				span.score (113 - 119) 
+				span.outcome.loss L
+		#current-game.game-summary
+			.date SAT 23 APRIL 12:00PM 
+			.matchup 
+				span.away-team MN Broncos 
+				span.at @ 
+				span.home-team MN Rangers
+		#next-game.game-summary 
+			.date SAT 30 APRIL 10:00AM 
+			.matchup
+				span.away-team MN Rangers 
+				span.at @ 
+				span.home-team WI Storm

@@ -2,7 +2,6 @@ extends layout
 
 block content
 	#schedule-snapshot
-		h3 Upcoming Games
 		#game-track
 			#prev-game.game-summary
 				.date DEC 12 2015 4:00PM
@@ -25,23 +24,27 @@ block content
 					span.away-team: strong MN Rangers 
 					span.at @ 
 					span.home-team WI Storm
+	#news
+		article
+			h2 November 7, 2015
+			h1 Rangers Roster Takes Shape After Tryouts
+			img(src='https://scontent-ord1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12400953_956951201026123_5672089673858249964_n.jpg?oh=818d41c5ed926f91f91af9ad5ffa1b7c&oe=57186F48')
+		article
+			h2 September 20, 2015
+			h1 Minnesota Rangers Top Broncos In Exhibition
+			img(src='https://lh3.googleusercontent.com/TPBUqHM9oripqHon69o1YkZOrz2-PS_7SUVw8hIRS2PayEBnI8Ukz2E-gfMwsTj7BGj1AKwn0kdWqwY3FY_J3ntbSo_bftQQDtrMjdyT2wVx1X6hAZWK5djS1Qs_LFnlFp5LKswzXVLtYFNHcG4YTSNRZiiPJiiqXNM8GQ8jpOcTqac-Z4W4MKV-Kes8Knl7DRovSJJPAS5aznjIQPZubr5aCa0g3jsWKB03g5hEXz6rndEmfYCe6WgDKSJYT5PCPO9xHO1Z0FbOT8qyTIdKIyqcna8I2ds6_7E3rnrsSHaqQxRZhsMYvmKg8jLSb6b7FDPuF3KrjO3uwrYT1nNGkYK9DTNQI-knLTg05WkjSAcp6o4VwnFmLaKzqxZP02p6NkUd6oCFIhYrRIj908U8j91fo_fJboDMicu7rqJRMVT0siNb_BGDNRvwaYqXp4LroNTB6IOZmc88CeiGXdZWrRz43NVikR8l8cu6w7SK-DsxM8Sblj1K2RyeufjXsWCOAmJFjcauyqk5HoUozvkSHcCzPSoWD-pJ6bLoVd30WwN3N7Ejt30LBMjDtIAKePMknXBlVg=w1324-h882-no')
+	hr
 	#latest-video
 		h3 Latest Video
-		.video(id='fb-root')
-			script.
-				(function(d, s, id) {  
-					var js, fjs = d.getElementsByTagName(s)[0];  
-					if (d.getElementById(id)) return;  
-					js = d.createElement(s); 
-					js.id = id;  
-					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  
-					fjs.parentNode.insertBefore(js, fjs);
-				}(document, 'script', 'facebook-jssdk'));
-			.fb-video(data-allowfullscreen='1' data-href='/MNRangersBasketball/videos/vb.798066073581304/949596008428309/?type=3')
-				.fb-xfbml-parse-ignore
-					blockquote(cite='https://www.facebook.com/MNRangersBasketball/videos/949596008428309/')
-						a(href='https://www.facebook.com/MNRangersBasketball/videos/949596008428309/')
-						p Rangers in training led by Jill Fisher. We love Fish!
-						p Posted by 
-							a(href='https://www.facebook.com/MNRangersBasketball/') Minnesota Rangers Basketball
-							on Saturday, December 19, 2015
+		#videos
+			.video(id='fb-training')
+				script.
+					(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+				.fb-video(data-allowfullscreen='1' data-href='/MNRangersBasketball/videos/vb.798066073581304/949596008428309/?type=3')
+					.fb-xfbml-parse-ignore
+						blockquote(cite='https://www.facebook.com/MNRangersBasketball/videos/949596008428309/')
+							a(href='https://www.facebook.com/MNRangersBasketball/videos/949596008428309/')
+							p Rangers in training led by Jill Fisher. We love Fish!
+							p Posted by 
+								a(href='https://www.facebook.com/MNRangersBasketball/') Minnesota Rangers Basketball
+								on Saturday, December 19, 2015

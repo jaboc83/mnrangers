@@ -2,6 +2,12 @@
 	margin: 1em 0;
 }
 
+.see-more {
+	text-align: right;
+	width: 95%;
+	display: inline-block;
+}
+
 #game-track {
 	display: flex;
 	justify-content: center;

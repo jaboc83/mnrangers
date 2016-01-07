@@ -98,13 +98,19 @@ hr {
 }
 
 .red-text { color: #C70F17; }
+.red-bg { background-color: #C70F17; }
 .white-text { color: #FFF; }
+.white-bg { background-color: #FFF; }
 
 #main-content {
 	background-color: #FFF;
 	min-height: 20em;
 	border-radius: 0 0 1em 1em;
 	margin-bottom: 1em;
+	padding-bottom: 1em;
+}
+
+#footer {
 	padding-bottom: 1em;
 }
 

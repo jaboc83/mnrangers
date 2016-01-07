@@ -1,0 +1,105 @@
+ul>li {
+	list-style-type: none;
+}
+
+#description {
+	padding: 1em;
+}
+
+#description-header {
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#description p {
+	text-align: justify;
+}
+
+#staff, #players {
+	padding: 0.5em;
+}
+
+#staff>h1, #players>h1 {
+	text-align: center;
+	background-color: black;
+	border: 4px solid #C70F17;
+	padding: 0.1em;
+}
+
+#staff .name, .player .name {
+	font-weight: 800;
+	font-size: 1.3em;
+}
+
+#staff .title, .player .position {
+	font-size: 0.8em;
+}
+
+.staff-member {
+	padding: 0.5em;
+}
+
+.staff-member:nth-child(odd) {
+	background-color: #DDD;
+}
+
+.position-title {
+	text-align: center;
+	font-size: 1.4em;
+	background-color: #EFEFEF;
+	color: #333;
+}
+
+.player {
+	padding: 0.5em;
+}
+
+.player:nth-child(odd) {
+	background-color: #DDD;
+}
+
+@media only screen and (max-device-width: 532px) {
+	#players>h1 {
+		font-size: 1.8em;
+	}
+}
+
+@media only screen and (min-device-width: 533px)
+	and (orientation: portrait)
+	and (max-device-width: 660px) {
+}
+
+
+@media only screen and (min-device-width: 533px)
+	and (orientation:landscape)
+	and (max-device-width: 660px) {
+}
+
+@media only screen and (min-device-width: 660px)
+	and (orientation: portrait)
+	and (max-device-width: 768px) {
+}
+
+@media only screen and (min-device-width: 660px)
+	and (orientation: landscape)
+	and (max-device-width: 768px) {
+}
+
+@media only screen and (min-device-width: 768px)
+	and (orientation: portrait)
+	and (max-device-width: 989px) {
+}
+
+@media only screen and (min-device-width: 768px)
+	and (orientation: landscape)
+	and (max-device-width: 989px) {
+}
+
+@media only screen and (min-device-width: 990px)
+	and (orientation: portrait) {
+}
+
+@media only screen and (min-device-width: 990px)
+	and (orientation: landscape) {
+}
+

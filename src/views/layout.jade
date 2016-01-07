@@ -14,7 +14,7 @@ html
 		link(href='https://fonts.googleapis.com/css?family=Bitter:400,700', rel='stylesheet', type='text/css')
 
 		// stylesheets
-		link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+		link(rel='stylesheet', type='text/css', href='/stylesheets/main.css')
 		link(rel='stylesheet', type='text/css', href='/stylesheets/#{page}.css')
 
 		// icons
@@ -42,12 +42,12 @@ html
 					Mission - To build LIFE champions through the development of skills, talents, character and integrity. Living Incredibly Fearless in Expectancy
 			#main-content
 				block content
-			#footer-section
-			#copyright
-				p(style='white-space:pre;')
-					| © 2015 Minnesota Rangers. All Rights Reserved 
-					| Design by 
-					a(href='http://www.unsignedbytes.com/') UnsignedBytes, LLC
+			#footer
+				#copyright
+					p(style='white-space:pre;')
+						| © 2015 Minnesota Rangers. All Rights Reserved 
+						| Design by 
+						a(href='http://www.unsignedbytes.com/') UnsignedBytes, LLC
 		// scripts
 		script(src='/javascripts/main.js')
 		script(src='/javascripts/#{page}.js')

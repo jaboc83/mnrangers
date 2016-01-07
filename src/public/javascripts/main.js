@@ -27,7 +27,7 @@
 
 }(document.getElementById.bind(document)));
 
-// Navigate to home page
+/* Navigate to home page logic */
 (function (getElem) {
 	var headerText = getElem("header-text");
 

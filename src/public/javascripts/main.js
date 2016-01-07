@@ -1,13 +1,12 @@
+/* Allow :active styles to work in CSS on a page in mobile safari */
 (function (doc) {
-
-	// Allow :active styles to work in CSS on a page in mobile safari
 	doc.addEventListener("touchstart", function(){}, true);
+}(document));
 
-}(document))
-
-(function (doc) {
-	var hamburger = doc.getElementById("hamburger-menu");
-	var topNav  = doc.getElementById("top-navigation");
+/* Handle hamburger menu hide/show menu */
+(function (getElem) {
+	var hamburger = getElem("hamburger-menu");
+	var topNav  = getElem("top-navigation");
 
 	function toggleNav() {
 		if (topNav.style.display === 'none' || topNav.style.display === "") {
@@ -26,4 +25,23 @@
 		hamburger.attachEvent("onclick", toggleNav);
 	}
 
-}(document))
+}(document.getElementById.bind(document)));
+
+// Navigate to home page
+(function (getElem) {
+	var headerText = getElem("header-text");
+
+	// For all major browsers, except IE 8 and earlier
+	if(headerText.addEventListener) {
+		headerText.addEventListener("click", function() {
+			window.location.href = "/";
+		});
+	}
+	// For IE 8 and earlier versions
+	else if (headerText.attachEvent) {
+		headerText.attachEvent("onclick", function() {
+			window.location.href = "/";
+		});
+	}
+
+}(document.getElementById.bind(document)));

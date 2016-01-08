@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Get rid of old container if it's running
+docker rm mnrangerswebsite
+
 # Create a new docker image based on the code in public/
 docker build -t unsignedbytes/mn-rangerswebsite-express .
 

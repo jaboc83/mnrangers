@@ -28,20 +28,22 @@
 }(document.getElementById.bind(document)));
 
 /* Navigate to home page logic */
-(function (getElem) {
+(function (getElem, global) {
 	var headerText = getElem("header-text");
+	var logo = getElem("logo");
+	function goToHome() {
+		global.location.href = "/";
+	}
 
 	// For all major browsers, except IE 8 and earlier
 	if(headerText.addEventListener) {
-		headerText.addEventListener("click", function() {
-			window.location.href = "/";
-		});
+		headerText.addEventListener("click", goToHome);
+		logo.addEventListener("click", goToHome);
 	}
 	// For IE 8 and earlier versions
 	else if (headerText.attachEvent) {
-		headerText.attachEvent("onclick", function() {
-			window.location.href = "/";
-		});
+		headerText.attachEvent("onclick", goToHome);
+		logo.attachEvent("onclick", goToHome);
 	}
 
-}(document.getElementById.bind(document)));
+}(document.getElementById.bind(document), window));

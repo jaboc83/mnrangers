@@ -41,6 +41,13 @@ hr {
 	position: relative;
 }
 
+#logo {
+	width: 3em;
+	height: 3em;
+	margin: 1em -0.75em 1em 0.5em;
+	cursor: pointer;
+}
+
 #header {
 	background-color: #000;
 	display: flex;
@@ -52,6 +59,8 @@ hr {
 #header-text {
 	flex-grow:1;
 	margin-left: 1em;
+	cursor: pointer;
+	font-size: 1.1em;
 }
 
 #header-text>h1 { display: inline-block; }
@@ -129,7 +138,8 @@ hr {
 	}
 
 	#header-text {
-		line-height: 2.3
+		line-height: 2.6;
+		font-size: 0.9em;
 	}
 
 	#top-navigation {

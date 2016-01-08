@@ -123,6 +123,28 @@ hr {
 	padding-bottom: 1em;
 }
 
+#social-media {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.5em;
+}
+
+#social-media>a {
+	height: 1.5em;
+	width: 1.5em;
+	display: inline-block;
+	background-size: cover;
+	margin-left: 1em;
+}
+
+.twitter {
+	background: no-repeat url(../images/social/twitter.png);
+}
+
+.facebook {
+	background: no-repeat url(../images/social/facebook.png);
+}
+
 #copyright {
 	color: #AAA;
 	text-align: center;
@@ -154,6 +176,7 @@ hr {
 	#top-navigation>a {
 		display: block
 	}
+
 }
 
 @media only screen and (min-device-width: 401px)
@@ -194,6 +217,7 @@ hr {
 	#top-navigation>a {
 		display: block
 	}
+
 }
 
 
@@ -236,6 +260,7 @@ hr {
 	#top-navigation>a {
 		display: block
 	}
+
 }
 
 @media only screen and (min-device-width: 451px)
@@ -273,6 +298,7 @@ hr {
 	#top-navigation>a {
 		display: block
 	}
+
 }
 
 @media only screen and (min-device-width: 660px)
@@ -310,6 +336,7 @@ hr {
 	#top-navigation {
 		display:flex;
 	}
+
 }
 
 @media only screen and (min-device-width: 660px)
@@ -343,6 +370,7 @@ hr {
 		font-size: 1.2em;
 		margin-top: 1em;
 	}
+
 
 	#top-navigation {
 		display: flex;
@@ -389,6 +417,11 @@ hr {
 	#top-navigation>a {
 		font-size: 1.1em;
 	}
+
+	#social-media>a {
+		width: 2.5em;
+		height: 2.5em;
+	}
 }
 
 @media only screen and (min-device-width: 768px)
@@ -431,6 +464,11 @@ hr {
 	#top-navigation>a {
 		font-size: 1.1em;
 	}
+
+	#social-media>a {
+		width: 2.5em;
+		height: 2.5em;
+	}
 }
 
 @media only screen and (min-device-width: 990px)
@@ -472,6 +510,11 @@ hr {
 	#top-navigation>a {
 		font-size: 1.3em;
 	}
+
+	#social-media>a {
+		width: 2.5em;
+		height: 2.5em;
+	}
 }
 
 @media only screen and (min-device-width: 990px)
@@ -512,5 +555,10 @@ hr {
 
 	#top-navigation>a {
 		font-size: 1.3em;
+	}
+
+	#social-media>a {
+		width: 2.5em;
+		height: 2.5em;
 	}
 }

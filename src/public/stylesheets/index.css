@@ -40,34 +40,22 @@
 .loss { color: #D66; }
 .win { color: #6D6; }
 
-#news article {
+#posts article {
 	padding: 1em 0 0 0;
-}
-
-article.training {
-	background: no-repeat url(https://scontent-ord1-1.xx.fbcdn.net/hphotos-xpa1/v/t1.0-9/12400953_956951201026123_5672089673858249964_n.jpg?oh=818d41c5ed926f91f91af9ad5ffa1b7c&oe=57186F48);
-	background-position: -1em;
-	background-size: cover;
-}
-
-article.tryouts {
-	background: no-repeat url(https://lh3.googleusercontent.com/TPBUqHM9oripqHon69o1YkZOrz2-PS_7SUVw8hIRS2PayEBnI8Ukz2E-gfMwsTj7BGj1AKwn0kdWqwY3FY_J3ntbSo_bftQQDtrMjdyT2wVx1X6hAZWK5djS1Qs_LFnlFp5LKswzXVLtYFNHcG4YTSNRZiiPJiiqXNM8GQ8jpOcTqac-Z4W4MKV-Kes8Knl7DRovSJJPAS5aznjIQPZubr5aCa0g3jsWKB03g5hEXz6rndEmfYCe6WgDKSJYT5PCPO9xHO1Z0FbOT8qyTIdKIyqcna8I2ds6_7E3rnrsSHaqQxRZhsMYvmKg8jLSb6b7FDPuF3KrjO3uwrYT1nNGkYK9DTNQI-knLTg05WkjSAcp6o4VwnFmLaKzqxZP02p6NkUd6oCFIhYrRIj908U8j91fo_fJboDMicu7rqJRMVT0siNb_BGDNRvwaYqXp4LroNTB6IOZmc88CeiGXdZWrRz43NVikR8l8cu6w7SK-DsxM8Sblj1K2RyeufjXsWCOAmJFjcauyqk5HoUozvkSHcCzPSoWD-pJ6bLoVd30WwN3N7Ejt30LBMjDtIAKePMknXBlVg=w1324-h882-no);
-	background-position-y: -3em;
-	background-size: 100%;
 }
 
 article img {
 	width: 100%;
 }
 
-#news article h1 {
+#posts article h1 {
 	font-size: 1.2em;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0 1em;
 }
 
-#news article h2 {
+#posts article h2 {
 	color: #800;
 	text-align: right;
 	font-size: 0.7em;

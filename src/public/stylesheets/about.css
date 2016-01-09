@@ -31,7 +31,7 @@ ul>li {
 	font-size: 1.3em;
 }
 
-#staff .title, .player .position, .player .number {
+#staff .title, .details{
 	font-size: 0.8em;
 }
 
@@ -66,6 +66,31 @@ ul>li {
 
 .player .number::after {
 	content: " • ";
+}
+
+.details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.vitals {
+	min-width: 6em;
+}
+
+.height {
+	font-style: italic;
+}
+
+.experience {
+	border-top: 1px solid #999;
+	margin-top: 0.5em;
+	padding-top: 0.5em;
+}
+
+.experience li {
+	font-size: 0.8em;
+    font-weight: 600;
+    padding-left: 1em;
 }
 
 @media only screen and (max-device-width: 532px) {

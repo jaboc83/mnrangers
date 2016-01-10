@@ -73,11 +73,15 @@ ul>li {
 	justify-content: space-between;
 }
 
+.number, .position {
+	font-size: 1.3em;
+}
+
 .vitals {
 	min-width: 6em;
 }
 
-.height {
+.height, .weight {
 	font-style: italic;
 }
 

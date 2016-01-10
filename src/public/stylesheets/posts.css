@@ -1,12 +1,13 @@
 article {
 	min-height: 10em;
 	margin: 0.5em 0.5em 1em;
+	text-align: justify;
 }
 
 article img {
 	float: right;
 	width: 13em;
-	height: 8em;
+	padding-left: 0.5em;
 }
 
 article h1 {

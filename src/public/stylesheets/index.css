@@ -38,15 +38,28 @@
 .game-summary>.results { text-align: center; }
 .outcome { font-weight: 600; }
 #current-game { flex-grow: 1; }
-.loss { color: #D66; }
+.loss { color: #C70F17; }
 .win { color: #6D6; }
 
 #posts article {
 	padding: 1em 0 1em 0;
 }
 
-article img {
-	width: 100%;
+#posts article:nth-child(1) .image {
+	background: no-repeat url(../images/posts/new-owner.jpg);
+	background-position: -11.75em -5.5em;
+}
+
+#posts article:nth-child(3) .image {
+	background: no-repeat url(../images/posts/tryouts.jpg);
+	background-position: -33em -13em;
+}
+
+article .image {
+	width: 15em;
+	height: 8em;
+	display: none;
+	border-radius: 0.5em;
 }
 
 #posts article h1 {
@@ -123,12 +136,60 @@ article img {
 	#latest-video {
 		max-width: 400px;
 	}
+
+	#posts {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#posts hr {
+		display: none;
+	}
+	#posts article {
+		max-width: 40%;
+		text-align: center;
+	}
+
+	#posts article h2 {
+		text-align: center;
+	}
+
+	article .image {
+		display: inline-block;
+	}
+	.see-more {
+		display: none;
+	}
 }
 
 /* 661px  - 768px LANDSCAPE */
 @media only screen and (min-device-width: 661px)
 	and (orientation: landscape)
 	and (max-device-width: 768px) {
+
+	#posts {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#posts hr {
+		display: none;
+	}
+	#posts article {
+		max-width: 40%;
+		text-align: center;
+	}
+
+	#posts article h2 {
+		text-align: center;
+	}
+
+	article .image {
+		display: inline-block;
+	}
+	.see-more {
+		display: none;
+	}
 }
 
 /* 769px  - 989px PORTRAIT */
@@ -142,6 +203,29 @@ article img {
 
 	#current-game>.date {
 		margin-bottom: 0;
+	}
+	#posts {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#posts hr {
+		display: none;
+	}
+	#posts article {
+		max-width: 40%;
+		text-align: center;
+	}
+
+	#posts article h2 {
+		text-align: center;
+	}
+
+	article .image {
+		display: inline-block;
+	}
+	.see-more {
+		display: none;
 	}
 }
 
@@ -157,6 +241,29 @@ article img {
 	#current-game>.date {
 		margin-bottom: 0;
 	}
+	#posts {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#posts hr {
+		display: none;
+	}
+	#posts article {
+		max-width: 40%;
+		text-align: center;
+	}
+
+	#posts article h2 {
+		text-align: center;
+	}
+
+	article .image {
+		display: inline-block;
+	}
+	.see-more {
+		display: none;
+	}
 }
 
 /* >= 990px PORTRAIT */
@@ -170,6 +277,29 @@ article img {
 	#current-game>.date {
 		margin-bottom: 0;
 	}
+	#posts {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#posts hr {
+		display: none;
+	}
+	#posts article {
+		max-width: 40%;
+		text-align: center;
+	}
+
+	#posts article h2 {
+		text-align: center;
+	}
+
+	article .image {
+		display: inline-block;
+	}
+	.see-more {
+		display: none;
+	}
 }
 
 /* >= 990px LANDSCAPE */
@@ -182,6 +312,32 @@ article img {
 
 	#current-game>.date {
 		margin-bottom: 0;
+	}
+
+	#posts {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	#posts hr {
+		display: none;
+	}
+
+	#posts article {
+		max-width: 40%;
+		text-align: center;
+	}
+
+	#posts article h2 {
+		text-align: center;
+	}
+
+	article .image {
+		display: inline-block;
+
+	}
+	.see-more {
+		display: none;
 	}
 }
 

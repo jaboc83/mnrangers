@@ -21,6 +21,7 @@
 	border: 1px #AAA solid;
 	padding: 0 0.5em 0.5em 0.5em;
 	background-color: #000;
+	cursor: pointer;
 }
 
 .game-summary>.matchup {

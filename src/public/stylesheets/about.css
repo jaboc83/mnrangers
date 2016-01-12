@@ -35,6 +35,11 @@ ul>li {
 	font-size: 0.8em;
 }
 
+.bio {
+    text-align: justify;
+    padding-top: 1em;
+}
+
 .staff-member .photo {
 	height: 5em;
 	width: 5em;

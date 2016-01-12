@@ -42,18 +42,18 @@
 .loss { color: #C70F17; }
 .win { color: #6D6; }
 
-#posts article {
+#headlines article {
 	padding: 1em 0 1em 0;
 	cursor: pointer;
 }
 
-#posts article:nth-child(1) .image {
-	background: no-repeat url(../images/posts/new-owner.jpg);
+#headlines article:nth-child(1) .image {
+	background: no-repeat url(../images/headlines/new-owner.jpg);
 	background-position: -11.75em -5.5em;
 }
 
-#posts article:nth-child(3) .image {
-	background: no-repeat url(../images/posts/tryouts.jpg);
+#headlines article:nth-child(3) .image {
+	background: no-repeat url(../images/headlines/tryouts.jpg);
 	background-position: -33em -13em;
 }
 
@@ -64,14 +64,14 @@ article .image {
 	border-radius: 0.5em;
 }
 
-#posts article h1 {
+#headlines article h1 {
 	font-size: 1.2em;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0 1em;
 }
 
-#posts article h2 {
+#headlines article h2 {
 	color: #800;
 	text-align: right;
 	font-size: 0.7em;
@@ -140,20 +140,20 @@ article .image {
 		max-width: 400px;
 	}
 
-	#posts {
+	#headlines {
 		display: flex;
 		justify-content: space-around;
 	}
 
-	#posts hr {
+	#headlines hr {
 		display: none;
 	}
-	#posts article {
+	#headlines article {
 		max-width: 40%;
 		text-align: center;
 	}
 
-	#posts article h2 {
+	#headlines article h2 {
 		text-align: center;
 	}
 
@@ -170,20 +170,20 @@ article .image {
 	and (orientation: landscape)
 	and (max-device-width: 768px) {
 
-	#posts {
+	#headlines {
 		display: flex;
 		justify-content: space-around;
 	}
 
-	#posts hr {
+	#headlines hr {
 		display: none;
 	}
-	#posts article {
+	#headlines article {
 		max-width: 40%;
 		text-align: center;
 	}
 
-	#posts article h2 {
+	#headlines article h2 {
 		text-align: center;
 	}
 
@@ -215,20 +215,20 @@ article .image {
 	#current-game>.date {
 		margin-bottom: 0;
 	}
-	#posts {
+	#headlines {
 		display: flex;
 		justify-content: space-around;
 	}
 
-	#posts hr {
+	#headlines hr {
 		display: none;
 	}
-	#posts article {
+	#headlines article {
 		max-width: 40%;
 		text-align: center;
 	}
 
-	#posts article h2 {
+	#headlines article h2 {
 		text-align: center;
 	}
 
@@ -260,20 +260,20 @@ article .image {
 	#current-game>.date {
 		margin-bottom: 0;
 	}
-	#posts {
+	#headlines {
 		display: flex;
 		justify-content: space-around;
 	}
 
-	#posts hr {
+	#headlines hr {
 		display: none;
 	}
-	#posts article {
+	#headlines article {
 		max-width: 40%;
 		text-align: center;
 	}
 
-	#posts article h2 {
+	#headlines article h2 {
 		text-align: center;
 	}
 
@@ -304,20 +304,20 @@ article .image {
 	#current-game>.date {
 		margin-bottom: 0;
 	}
-	#posts {
+	#headlines {
 		display: flex;
 		justify-content: space-around;
 	}
 
-	#posts hr {
+	#headlines hr {
 		display: none;
 	}
-	#posts article {
+	#headlines article {
 		max-width: 40%;
 		text-align: center;
 	}
 
-	#posts article h2 {
+	#headlines article h2 {
 		text-align: center;
 	}
 
@@ -349,21 +349,21 @@ article .image {
 		margin-bottom: 0;
 	}
 
-	#posts {
+	#headlines {
 		display: flex;
 		justify-content: space-around;
 	}
 
-	#posts hr {
+	#headlines hr {
 		display: none;
 	}
 
-	#posts article {
+	#headlines article {
 		max-width: 40%;
 		text-align: center;
 	}
 
-	#posts article h2 {
+	#headlines article h2 {
 		text-align: center;
 	}
 

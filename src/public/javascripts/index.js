@@ -16,20 +16,20 @@
 
 }(document.getElementById.bind(document), window));
 
-/* Navigate to posts page logic */
+/* Navigate to headlines page logic */
 (function (getElem, global) {
-	var posts = getElem("posts");
+	var headlines = getElem("headlines");
 	function goToSchedule() {
-		global.location.href = "/posts";
+		global.location.href = "/headlines";
 	}
 
 	// For all major browsers, except IE 8 and earlier
-	if(posts.addEventListener) {
-		posts.addEventListener("click", goToSchedule);
+	if(headlines.addEventListener) {
+		headlines.addEventListener("click", goToSchedule);
 	}
 	// For IE 8 and earlier versions
-	else if (posts.attachEvent) {
-		posts.attachEvent("onclick", goToSchedule);
+	else if (headlines.attachEvent) {
+		headlines.attachEvent("onclick", goToSchedule);
 	}
 
 }(document.getElementById.bind(document), window));

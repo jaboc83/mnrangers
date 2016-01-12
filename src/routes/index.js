@@ -25,11 +25,11 @@ router.get('/schedule', function(req, res, next) {
 	);
 });
 
-/* GET posts page */
-router.get('/posts', function(req, res, next) {
-	res.render('posts', {
+/* GET headlines page */
+router.get('/headlines', function(req, res, next) {
+	res.render('headlines', {
 		title: 'MN Rangers Basketball',
-		page: 'posts'}
+		page: 'headlines'}
 	);
 });
 

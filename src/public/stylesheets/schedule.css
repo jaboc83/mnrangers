@@ -1,3 +1,26 @@
+		.rangers {
+			font-weight: 800;			
+		}
+		
+		table, td, th {
+			border-collapse: collapse;
+			padding: 1em;
+		}
+		
+		table {
+			margin: 0px auto;
+			width: 100%;
+		}
+		
+		tr:nth-child(odd) {
+			background-color: #DDD;
+		}
+		
+		img {
+			vertical-align: middle;
+		}
+
+
 
 @media only screen and (max-device-width: 532px) {
 }

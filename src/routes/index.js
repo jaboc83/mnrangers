@@ -34,11 +34,11 @@ router.get('/headlines', function(req, res, next) {
 });
 
 
-/* GET gallery page */
-router.get('/gallery', function(req, res, next) {
-	res.render('gallery', {
+/* GET community page */
+router.get('/community', function(req, res, next) {
+	res.render('community', {
 		title: 'MN Rangers Basketball',
-		page: 'gallery'}
+		page: 'community'}
 	);
 });
 

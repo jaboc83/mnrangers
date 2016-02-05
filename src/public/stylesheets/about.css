@@ -73,6 +73,15 @@ ul>li {
 	content: " • ";
 }
 
+.player .photo {
+	width: 100%;
+	border-radius: 0.3em;
+}
+
+.photo-footer {
+	text-align: center;
+}
+
 .details {
 	display: flex;
 	justify-content: space-between;

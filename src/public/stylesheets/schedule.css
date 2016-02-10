@@ -19,26 +19,56 @@
 		img {
 			vertical-align: middle;
 		}
+		th {
+			text-align: center;
+		}
+		div.at {
+			font-size: 1.2em;
+			font-weight: 800;
+		}
+		td {
+			text-align: center;
+		}
 
 
 
 @media only screen and (max-device-width: 532px) {
+	table {
+		font-size: 0.8em;
+	}
+	img {
+		display: none;
+	}
 }
 
 @media only screen and (min-device-width: 533px)
 	and (orientation: portrait)
 	and (max-device-width: 660px) {
+	table {
+		font-size: 0.8em;
+
+	}
+	img {
+		display: none;
+	}
 }
 
 
 @media only screen and (min-device-width: 533px)
 	and (orientation:landscape)
 	and (max-device-width: 660px) {
+	table {
+		font-size: 0.8em;
+	}
+	img {
+		display: none;
+	}
 }
 
 @media only screen and (min-device-width: 660px)
 	and (orientation: portrait)
 	and (max-device-width: 768px) {
+
 }
 
 @media only screen and (min-device-width: 660px)

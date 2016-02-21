@@ -31,11 +31,15 @@
 		}
 
 
-
 @media only screen and (max-device-width: 532px) {
 	table {
 		font-size: 0.8em;
 	}
+	
+	.matchup-col {
+		width: 8em;
+	}
+		
 	img {
 		display: none;
 	}
@@ -48,6 +52,11 @@
 		font-size: 0.8em;
 
 	}
+	
+	.matchup-col {
+		width: 8em;
+	}
+	
 	img {
 		display: none;
 	}
@@ -60,6 +69,11 @@
 	table {
 		font-size: 0.8em;
 	}
+	
+	.matchup-col {
+		width: 8em;
+	}
+	
 	img {
 		display: none;
 	}

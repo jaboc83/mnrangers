@@ -29,7 +29,29 @@
 		td {
 			text-align: center;
 		}
-
+		
+		.dateTime-col {
+			width: 8em;
+		}
+		
+		.result-col {
+			width: 12em;
+		}
+		
+		td > a, a:visited {
+			text-decoration: underline;
+			color: #333333;
+			text-align: center;
+		}
+		
+		td > a:hover {
+			color: #999999; 
+		}
+		
+		.location-col {
+			width: 8em;
+		}
+		
 
 @media only screen and (max-device-width: 532px) {
 	table {

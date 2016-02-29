@@ -1,26 +1,58 @@
-
+	#main-content img {
+		padding: .5em;
+		padding-top: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		width: 95%;
+		display: block;
+	}
+	
+	figcaption {
+		text-align: center;
+	}
+	
 @media only screen and (max-device-width: 532px) {
+	img {
+		height: 75%;
+		width: 75%;
+	}
 }
 
 @media only screen and (min-device-width: 533px)
 	and (orientation: portrait)
 	and (max-device-width: 660px) {
+	img {
+		height: 75%;
+		width: 75%;
+	}
 }
 
 
 @media only screen and (min-device-width: 533px)
 	and (orientation:landscape)
 	and (max-device-width: 660px) {
+	img {
+		height: 75%;
+		width: 75%;
+	}
 }
 
 @media only screen and (min-device-width: 660px)
 	and (orientation: portrait)
 	and (max-device-width: 768px) {
+	img {
+		height: 75%;
+		width: 75%;
+	}
 }
 
 @media only screen and (min-device-width: 660px)
 	and (orientation: landscape)
 	and (max-device-width: 768px) {
+	img {
+		height: 75%;
+		width: 75%;
+	}
 }
 
 @media only screen and (min-device-width: 768px)

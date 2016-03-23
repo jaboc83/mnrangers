@@ -63,10 +63,11 @@ ul>li {
 
 .player {
 	padding: 0.5em;
-}
-
-.player:nth-child(odd) {
-	background-color: #DDD;
+	background-color: #EEE;
+	border: 1px #AAA solid;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 22em;
 }
 
 .player .number::after {
@@ -132,6 +133,10 @@ ul>li {
 		height: 5em;
 		width: 5em;
 	}
+	.player {
+		max-width: 30em;
+	}
+
 }
 
 
@@ -160,6 +165,13 @@ ul>li {
 		min-height: 7em;
 		text-align: center;
 	}
+
+	.player {
+		margin: 0.5em;
+		max-width: 44%;
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
 @media only screen and (min-device-width: 660px)
@@ -175,6 +187,13 @@ ul>li {
 		padding: 0.5em;
 		min-height: 7em;
 		text-align: center;
+	}
+
+	.player {
+		margin: 0.5em;
+		max-width: 44%;
+		display: inline-block;
+		vertical-align: top;
 	}
 }
 
@@ -192,6 +211,12 @@ ul>li {
 		min-height: 7em;
 		text-align: center;
 	}
+	.player {
+		margin: 0.5em;
+		max-width: 44%;
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
 @media only screen and (min-device-width: 768px)
@@ -208,6 +233,12 @@ ul>li {
 		min-height: 7em;
 		text-align: center;
 	}
+	.player {
+		margin: 0.5em;
+		max-width: 44%;
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
 @media only screen and (min-device-width: 990px)
@@ -223,6 +254,12 @@ ul>li {
 		min-height: 7em;
 		text-align: center;
 	}
+	.player {
+		margin: 0.5em;
+		max-width: 44%;
+		display: inline-block;
+		vertical-align: top;
+	}
 }
 
 @media only screen and (min-device-width: 990px)
@@ -237,6 +274,12 @@ ul>li {
 		padding: 0.5em;
 		min-height: 7em;
 		text-align: center;
+	}
+	.player {
+		margin: 0.5em;
+		max-width: 44%;
+		display: inline-block;
+		vertical-align: top;
 	}
 }
 

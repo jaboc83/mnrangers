@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var staffArray = require('../data/staff.js');
+var playerArray = require('../data/players.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -15,7 +16,8 @@ router.get('/about', function(req, res, next) {
 	res.render('about', {
 		title: 'MN Rangers Basketball',
 		page: 'about',
-		staff: staffArray
+		staff: staffArray,
+		players: playerArray
 	});
 });
 

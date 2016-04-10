@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var staffArray = require('../data/staff.js');
 var playerArray = require('../data/players.js');
+var matchupArray = require('../data/matchups.js');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -25,7 +26,8 @@ router.get('/about', function(req, res, next) {
 router.get('/schedule', function(req, res, next) {
 	res.render('schedule', {
 		title: 'MN Rangers Basketball',
-		page: 'schedule'
+		page: 'schedule',
+		matchups: matchupArray
 	});
 });
 

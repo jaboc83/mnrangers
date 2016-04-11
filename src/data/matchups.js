@@ -52,9 +52,9 @@ var teams = {
   }
 }
 
-function Matchup(homeTeam, awayTeam, dateTime, location, result) {
-  this.homeTeam = homeTeam;
+function Matchup(awayTeam, homeTeam, dateTime, location, result) {
   this.awayTeam = awayTeam;
+  this.homeTeam = homeTeam;
   this.dateTime = dateTime;
   this.location = location;
   this.result = result;

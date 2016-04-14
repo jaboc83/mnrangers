@@ -3,12 +3,23 @@ var router = express.Router();
 var staffArray = require('../data/staff.js');
 var playerArray = require('../data/players.js');
 var matchupArray = require('../data/matchups.js');
+var nearGames = [];
+
+for (var i = matchupArray.length; i >= 0; i--) {
+	if (matchupArray[1].result !== "" || i === 0) {
+		nearGames.push(matchupArray[i]);
+		nearGames.push(matchupArray[i + 1]);
+		nearGames.push(matchupArray[i + 2]);
+		break;
+	}
+}
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	res.render('index', {
 		title: 'MN Rangers Basketball',
-		page: 'index'
+		page: 'index',
+		matchups: nearGames
 	});
 });
 

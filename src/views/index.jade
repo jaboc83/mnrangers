@@ -6,24 +6,27 @@ block content
 			#prev-game.game-summary
 				.date DEC 12 2015 4:00PM
 				.matchup 
-					span.away-team: strong MN Rangers 
+					span.away-team: strong Minnesota Rangers 
 					span.at @ 
-					span.home-team IA Hornets
+					br
+					span.home-team Iowa Hornets
 				.results 
 					span.score (113 - 119) 
 					span.outcome.loss L
 			#current-game.game-summary
-				.date SAT 23 APRIL 12:00PM 
+				.date #{matchups[0].dateTime}
 				.matchup 
-					span.away-team MN Broncos 
-					span.at @ 
-					span.home-team: strong MN Rangers
+					span.away-team(class=(matchups[0].homeOrAway() == 'home'? '' : 'rangers')) #{matchups[0].awayTeam.teamName} 
+					span.at @  
+					br
+					span.home-team(class=(matchups[0].homeOrAway() == 'away'? '' : 'rangers')) #{matchups[0].homeTeam.teamName} 
 			#next-game.game-summary 
-				.date SAT 30 APRIL 10:00AM 
-				.matchup
-					span.away-team: strong MN Rangers 
-					span.at @ 
-					span.home-team WI Storm
+				.date #{matchups[1].dateTime}
+				.matchup 
+					span.away-team(class=(matchups[1].homeOrAway() == 'home'? '' : 'rangers')) #{matchups[1].awayTeam.teamName} 
+					span.at @  
+					br
+					span.home-team(class=(matchups[1].homeOrAway() == 'away'? '' : 'rangers')) #{matchups[1].homeTeam.teamName}
 	#headlines
 		article
 			.image

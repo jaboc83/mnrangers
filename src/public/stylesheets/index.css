@@ -52,13 +52,14 @@
 }
 
 #headlines article:nth-child(1) .image {
-	background: no-repeat url(../images/headlines/home-opener.jpg);
-	background-size: 100%;
+	background: no-repeat url(../images/logo.svg);
+	background-size: 50%;
+	background-position: 50px;
 }
 
 #headlines article:nth-child(3) .image {
-	background: no-repeat url(../images/headlines/new-owner.jpg);
-	background-position: -11.75em -5.5em;
+	background: no-repeat url(../images/headlines/home-opener.jpg);
+	background-size: 100%;
 }
 
 article .image {

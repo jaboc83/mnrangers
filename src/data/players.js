@@ -2,7 +2,7 @@ module.exports = [
   {
     img: "BJMoore.jpg",
     name: "BJ Moore",
-    number: 3,
+    number: 25,
     position: "PG/SG",
     hometown: "Gary, IN",
     height: "6'1\"",
@@ -12,7 +12,7 @@ module.exports = [
   {
     img: "TimLott.jpg",
     name: "Tim Lott",
-    number: 13,
+    number: 8,
     position: "SG/SF/PF",
     hometown: "College Station, TX",
     height: "6'4\"",
@@ -22,7 +22,7 @@ module.exports = [
   {
     img: "DariusCampbell.jpg",
     name: "Darius Campbell",
-    number: 24,
+    number: 21,
     position: "SG/SF",
     hometown: "Saint Paul, MN",
     height: "6'3\"",
@@ -32,7 +32,7 @@ module.exports = [
   {
     img: "KennyBass.jpg",
     name: "Kenny Bass",
-    number: 8,
+    number: 11,
     position: "SG",
     hometown: "Chicago,IL",
     height: "6'2\"",
@@ -42,7 +42,7 @@ module.exports = [
   {
     img: "BruceHowell.jpg",
     name: "Bruce Howell",
-    number: 20,
+    number: 45,
     position: "SF/PF",
     hometown: "Saint Paul, MN",
     height: "6'4\"",
@@ -52,7 +52,7 @@ module.exports = [
   {
     img: "TauriceSmith.jpg",
     name: "Taurice Smith",
-    number: 10,
+    number: 5,
     position: "PG/SG",
     hometown: "Minneapolis, MN",
     height: "6'0\"",
@@ -62,7 +62,7 @@ module.exports = [
   {
     img: "RochesterRogers.jpg",
     name: 'Rochester "Roc"  Rogers',
-    number: 6,
+    number: 34,
     position: "SG/SF",
     hometown: "Saint Paul, MN",
     height: "6'3\"",
@@ -72,7 +72,7 @@ module.exports = [
   {
     img: "QuintonJackson.jpg",
     name: "Quinton Jackson",
-    number: 7,
+    number: 23,
     position: "PG/SG",
     hometown: "Minneapolis, MN",
     height: "6'1\"",
@@ -82,7 +82,7 @@ module.exports = [
   {
     img: "DamienLolar.jpg",
     name: "Damien Lolar",
-    number: 54,
+    number: 50,
     position: "SF/PF",
     hometown: "Kansas",
     height: "6'4\"",
@@ -92,7 +92,7 @@ module.exports = [
   {
     img: "SamMitchell.jpg",
     name: "Sam Mitchell",
-    number: 5,
+    number: 14,
     position: "PG/SG",
     hometown: "Brooklyn, NY",
     height: "6'1\"",
@@ -102,7 +102,7 @@ module.exports = [
   {
     img: "DominiqueDawson.jpg",
     name: "Dominique Dawson",
-    number: 33,
+    number: 41,
     position: "C/PF",
     hometown: "Minneapolis, Minnesota",
     height: "6'8\"",
@@ -112,7 +112,7 @@ module.exports = [
   {
     img: "DylanHale.jpg",
     name: "Dylan Hale",
-    number: 2,
+    number: 30,
     position: "PG/SG",
     hometown: "Saint Paul, Minnesota",
     height: "6'2\"",
@@ -122,7 +122,7 @@ module.exports = [
   {
     img: "RicoPhillips.jpg",
     name: "Rico Phillips",
-    number: 0,
+    number: 3,
     position: "PG",
     hometown: "Saint Paul, Minnesota",
     height: "6'0\"",
@@ -132,7 +132,7 @@ module.exports = [
   {
     img: "JordanOsberg.jpg",
     name: "Jordan Osberg",
-    number: 9,
+    number: 32,
     position: "PG/SG",
     hometown: "Saint Paul, Minnesota",
     height: "6'2\"",

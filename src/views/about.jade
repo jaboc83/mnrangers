@@ -1,29 +1,25 @@
 extends layout
 
+block meta
+	meta(property="og:image", content="http://mnrangers.com/images/banner.jpg")
+
 block content
 	#description
 		#description-header Who We Are
 		p.
 			The Minnesota Rangers basketball team is a semi-pro basketball team 
 			based in the Twin Cities. We are part of the Midwest Basketball 
-			League and our quest for a CHAMPIONSHIP is lived everyday through 
+			League and our quest for a championship is lived everyday through 
 			players that work hard and strive for excellence.	
-	#staff
-		h1.white-text Rangers Staff
-		ul
-			each member in staff
-				li.staff-member
-					img.photo(src="../images/profiles/#{member.img}")
-					.name #{member.name}
-					.title #{member.title}
-					.bio #{member.bio}
 	#players
-		h1.white-text Player Roster
+		.section-header
+			h1.white-text Player Roster 
+			a.white-text(href="depth") Go To Depth Chart
 		ul
 			each player in players
 				li.player
 					img.photo(src="../images/players/#{player.img}")
-					.name #{player.name}
+					a.name(href="players/#{player.id}") #{player.name}
 					.details
 						.identifiers
 							span.number #{player.number}
@@ -41,3 +37,13 @@ block content
 						ul
 							each team in player.pastTeams
 								li #{team}
+	#staff
+		.section-header
+			h1.white-text Rangers Staff
+		ul
+			each member in staff
+				li.staff-member
+					img.photo(src="../images/profiles/#{member.img}")
+					.name #{member.name}
+					.title #{member.title}
+					.bio #{member.bio}

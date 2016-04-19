@@ -1,16 +1,30 @@
-	#main-content img {
-		padding: .5em;
-		padding-top: 1em;
-		margin-left: auto;
-		margin-right: auto;
-		width: 95%;
-		display: block;
-	}
-	
-	figcaption {
-		text-align: center;
-	}
-	
+article {
+	min-height: 15em;
+	margin: 0.5em 0.5em 1em;
+	text-align: justify;
+}
+
+article img {
+	float: right;
+	width: 13em;
+	padding-left: 0.5em;
+}
+
+article h1 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0 1em;
+}
+
+article h2 {
+	color: #800;
+	text-align: right;
+	font-size: 0.7em;
+	padding-right: 1em;
+	text-transform: uppercase;
+}
+
 @media only screen and (max-device-width: 532px) {
 	img {
 		height: 75%;

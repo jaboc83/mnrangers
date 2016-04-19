@@ -1,6 +1,13 @@
-/* Allow :active styles to work in CSS on a page in mobile safari */
+/* Allow :active styles to work in CSS on a page in mobile safari
+ * and enable fastclick to get rid of 300ms delay on mobile
+ */
 (function (doc) {
-	doc.addEventListener("touchstart", function(){}, true);
+	if ('addEventListener' in doc) {
+		doc.addEventListener("touchstart", function(){}, true);
+    doc.addEventListener('DOMContentLoaded', function() {
+        FastClick.attach(doc.body);
+    }, false);
+	}
 }(document));
 
 /* Handle hamburger menu hide/show menu */

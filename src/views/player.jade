@@ -1,0 +1,26 @@
+extends layout
+
+block meta
+	meta(property="og:image", content="http://mnrangers.com/images/players/#{player.img}")
+
+block content
+	li.player
+		img.photo(src="../images/players/#{player.img}")
+		.name #{player.name}
+		.details
+			.identifiers
+				span.number #{player.number}
+				span.position #{player.position}
+				br
+				span hometown: 
+				span.hometown #{player.hometown}
+			.vitals
+				span height: 
+				span.height #{player.height}
+				br
+				span weight:
+				span.weight #{player.weight}
+		.experience Past Teams:
+			ul
+				each team in player.pastTeams
+					li #{team}

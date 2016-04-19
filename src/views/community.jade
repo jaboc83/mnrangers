@@ -1,11 +1,24 @@
 extends layout
 
+block meta
+	meta(property="og:image", content="http://mnrangers.com/images/banner.jpg")
+
 block content
-	img(src = "/images/community/volunteer-FMSC.jpg")
-	figcaption.
-		On Friday, March 18th, some of the Minnesota Rangers staff and team members 
-		helped to pack enough food to feed 79 children for an entire year.  This event 
-		was at Feed my Starving Children in Eagan, Minnesota.
+	article
+		header
+			h2 March 18th 2016
+			h1 Feed My Starving Children
+		img(src = "/images/community/volunteer-FMSC.jpg")
+		p.
+			On Friday, March 18th, some of the Minnesota Rangers staff and team members 
+			helped to pack enough food to feed 79 children for an entire year.  This event 
+			was at Feed my Starving Children in Eagan, Minnesota.
 	hr
-	img(src = "/images/community/volunteer-heartland.jpg")
-	figcaption Minnesota Rangers team and staff helped to pack 13,750 meals on January 21st at Second Harvest Heartland.
+	article
+		header
+			h2 January 21st 2016
+			h1 Second Harvest Heartland
+		img(src = "/images/community/volunteer-heartland.jpg")
+		p. 
+			Minnesota Rangers team and staff helped to pack 13,750 meals on January 
+			21st at Second Harvest Heartland.

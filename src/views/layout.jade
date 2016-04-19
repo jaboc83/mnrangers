@@ -8,6 +8,7 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		meta(name='description', content='Minnesota Rangers Basketball Official Website')
 		meta(name='keywords', content='basketball, rangers, minnesota, mn, mnrangers, minnesota rangers, midwest basketball league')
+		block meta
 
 		// fonts
 		link(href='https://fonts.googleapis.com/css?family=Roboto:400,300,700', rel='stylesheet', type='text/css')
@@ -53,9 +54,7 @@ html
 					a(href='headlines') Headlines
 					a(href='community') Community
 					a(href='contact') Contact
-			#banner
-				#mission-statement.
-					Mission - To build LIFE champions through the development of skills, talents, character and integrity. Living Incredibly Fearless in Expectancy
+			block banner
 			#main-content
 				block content
 			#footer
@@ -63,10 +62,11 @@ html
 					a.facebook(title="View MN Rangers' profile on Facebook", href="https://www.facebook.com/MNRangersBasketball/", target="_blank") 
 					a.twitter(title="View MN Rangers' profile on Twitter", href="https://twitter.com/MN_Rangers/", target="_blank") 
 				#copyright
-					p(style='white-space:pre;')
-						| © 2016 Minnesota Rangers Basketball, Inc. All Rights Reserved 
+					p
+						| © 2016 Minnesota Rangers Basketball, Inc. All Rights Reserved. 
 						| Design by 
 						a(href='http://www.unsignedbytes.com/') UnsignedBytes, LLC
 		// scripts
+		script(src='https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js')
 		script(src='/javascripts/main.js')
 		script(src='/javascripts/#{page}.js')

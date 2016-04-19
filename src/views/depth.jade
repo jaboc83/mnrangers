@@ -1,0 +1,39 @@
+extends layout
+
+block meta
+	meta(property="og:image", content="http://mnrangers.com/images/court.jpg")
+
+block content
+	#court
+		h1 Depth Chart
+		#low
+			#power-forwards.position-block 
+				label PF
+				each player in depthChart.pf
+					a.player(href="players/#{player.id}").
+						#{player.number} - #{player.getShortName()}
+
+			#centers.position-block 
+				label C
+				each player in depthChart.c
+					a.player(href="players/#{player.id}").
+						#{player.number} - #{player.getShortName()}
+
+			#small-forwards.position-block
+				label SF
+				each player in depthChart.sf
+					a.player(href="players/#{player.id}").
+						#{player.number} - #{player.getShortName()}
+
+		#high
+			#shooting-guards.position-block
+				label SG
+				each player in depthChart.sg
+					a.player(href="players/#{player.id}").
+						#{player.number} - #{player.getShortName()}
+
+			#point-guards.position-block
+				label PG
+				each player in depthChart.pg
+					a.player(href="players/#{player.id}").
+						#{player.number} - #{player.getShortName()}

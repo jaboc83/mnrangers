@@ -1,12 +1,13 @@
 var express = require('express');
 var router = express.Router();
+var depthChart = require('../data/depthChart.js');
 var staffArray = require('../data/staff.js');
 var playerArray = require('../data/players.js');
 var matchupArray = require('../data/matchups.js');
 var nearGames = [];
 
 for (var i = matchupArray.length; i >= 0; i--) {
-	if (matchupArray[1].result !== "" || i === 0) {
+	if (matchupArray[1].rangersWon() !== null || i === 0) {
 		nearGames.push(matchupArray[i]);
 		nearGames.push(matchupArray[i + 1]);
 		nearGames.push(matchupArray[i + 2]);
@@ -26,7 +27,7 @@ router.get('/', function(req, res, next) {
 /* GET about page */
 router.get('/about', function(req, res, next) {
 	res.render('about', {
-		title: 'MN Rangers Basketball',
+		title: 'MN Rangers Basketball About the Team',
 		page: 'about',
 		staff: staffArray,
 		players: playerArray
@@ -36,7 +37,7 @@ router.get('/about', function(req, res, next) {
 /* GET schedule page */
 router.get('/schedule', function(req, res, next) {
 	res.render('schedule', {
-		title: 'MN Rangers Basketball',
+		title: 'MN Rangers Basketball Game Schedule',
 		page: 'schedule',
 		matchups: matchupArray
 	});
@@ -45,7 +46,7 @@ router.get('/schedule', function(req, res, next) {
 /* GET headlines page */
 router.get('/headlines', function(req, res, next) {
 	res.render('headlines', {
-		title: 'MN Rangers Basketball',
+		title: 'MN Rangers Basketball Headlines',
 		page: 'headlines'
 	});
 });
@@ -54,7 +55,7 @@ router.get('/headlines', function(req, res, next) {
 /* GET community page */
 router.get('/community', function(req, res, next) {
 	res.render('community', {
-		title: 'MN Rangers Basketball',
+		title: 'MN Rangers Basketball Community Relations',
 		page: 'community'
 	});
 });
@@ -63,8 +64,36 @@ router.get('/community', function(req, res, next) {
 /* GET contact page */
 router.get('/contact', function(req, res, next) {
 	res.render('contact', {
-		title: 'MN Rangers Basketball',
+		title: 'MN Rangers Basketball Contact Information',
 		page: 'contact'
+	});
+});
+
+/* GET player page */
+router.get('/players/:playerId', function(req, res, next) {
+	res.render('player', {
+		title: 'MN Rangers Basketball Players',
+		page: 'player',
+		player: playerArray.filter(function (player) {
+			return player.id === req.params.playerId;
+		})[0]
+	});
+});
+
+/* GET headline page */
+router.get('/headlines/:headlineId', function(req, res, next) {
+	res.render('headlines/' + req.params.headlineId, {
+		title: 'MN Rangers Basketball News Story',
+		page: 'headline'
+	});
+});
+
+/* GET headline page */
+router.get('/depth', function(req, res, next) {
+	res.render('depth', {
+		title: 'MN Rangers Basketball Depth Chart',
+		page: 'depth',
+		depthChart: depthChart
 	});
 });
 

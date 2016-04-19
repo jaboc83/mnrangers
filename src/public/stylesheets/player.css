@@ -1,130 +1,88 @@
-.rangers {
+li {
+	list-style-type: none;
+}
+
+.name {
+    text-decoration: none;
+}
+
+.player h1 {
+	text-align: center;
+	background-color: black;
+	border: 4px solid #C70F17;
+	padding: 0.1em;
+}
+
+.name {
 	font-weight: 800;
+	font-size: 1.3em;
+	color: #333;
 }
 
-table, td, th {
-	border-collapse: collapse;
-	padding: 1em 0;
+.player {
+	padding: 0.5em;
+	background-color: #EEE;
+	border: 1px #AAA solid;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 35em;
 }
 
-table {
-	margin: 0px auto;
+.player .number::after {
+	content: " • ";
+}
+
+.player .photo {
 	width: 100%;
+	border-radius: 0.3em;
 }
 
-tr {
-	border-bottom: 3px solid #333
+.details {
+	display: flex;
+	justify-content: space-between;
 }
 
-tr:nth-child(1) {
-	background-color: #DDD;
+.number, .position {
+	font-size: 1.3em;
 }
 
-table img {
-	vertical-align: middle;
-}
-th {
-	text-align: center;
-}
-div.at {
-	font-size: 1.2em;
-	font-weight: 800;
-}
-td {
-	text-align: center;
+.vitals {
+	min-width: 6em;
 }
 
-.datetime-col {
-	width: 8em;
+.height, .weight {
+	font-style: italic;
 }
 
-.result-col {
-	width: 12em;
-	font-weight: 800;
+.experience {
+	border-top: 1px solid #999;
+	margin-top: 0.5em;
+	padding-top: 0.5em;
 }
 
-td > a, a:visited {
-	text-decoration: underline;
-	color: #333333;
-	text-align: center;
-}
-
-td > a:hover {
-	color: #999999;
-}
-
-.location-col {
-	width: 8em;
-}
-
-.win-grn {
-	color: #0A0;
-}
-
-.win-grn:after {
-	content: " (W)"
-}
-
-.loss-red {
-	color: #A00;
-}
-
-.loss-red:after {
-	content: " (L)"
+.experience li {
+	font-size: 0.8em;
+    font-weight: 600;
+    padding-left: 1em;
 }
 
 @media only screen and (max-device-width: 532px) {
-	table {
-		font-size: 0.8em;
-	}
-
-	.matchup-col {
-		width: 8em;
-	}
-
-	table img {
-		display: none;
-	}
 }
 
 @media only screen and (min-device-width: 533px)
 	and (orientation: portrait)
 	and (max-device-width: 660px) {
-	table {
-		font-size: 0.8em;
-
-	}
-
-	.matchup-col {
-		width: 8em;
-	}
-
-	table img {
-		display: none;
-	}
 }
 
 
 @media only screen and (min-device-width: 533px)
 	and (orientation:landscape)
 	and (max-device-width: 660px) {
-	table {
-		font-size: 0.8em;
-	}
-
-	.matchup-col {
-		width: 8em;
-	}
-
-	table img {
-		display: none;
-	}
 }
 
 @media only screen and (min-device-width: 660px)
 	and (orientation: portrait)
 	and (max-device-width: 768px) {
-
 }
 
 @media only screen and (min-device-width: 660px)

@@ -12,6 +12,14 @@
 	display: inline-block;
 }
 
+#banner {
+	background: no-repeat center url(../images/banner.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 15em;
+}
+
+
 #game-track {
 	display: flex;
 	justify-content: center;
@@ -23,7 +31,7 @@
 
 .game-summary {
 	border: 1px #AAA solid;
-	padding: 0 0.5em 0.5em 0.5em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
 	background-color: #000;
 	cursor: pointer;
 }
@@ -112,12 +120,23 @@ article .image {
 		display: block;
 		text-align: center;
 	}
+
+	#banner {
+		background-position-y: -2.8em;
+		height: 10em
+	}
+
 }
 
 /* 451px  - 660px PORTRAIT */
 @media only screen and (min-device-width: 451px)
 	and (orientation: portrait)
 	and (max-device-width: 660px) {
+
+	#banner {
+		background-position-y: -2.8em;
+		height: 11.5em
+	}
 
 	.game-summary>.matchup>span {
 		display: block;
@@ -130,6 +149,11 @@ article .image {
 	and (orientation:landscape)
 	and (max-device-width: 660px) {
 
+	#banner {
+		background-position-y: -2.8em;
+		height: 11.5em
+	}
+
 	.game-summary>.matchup>span {
 		display: block;
 		text-align: center;
@@ -140,6 +164,10 @@ article .image {
 @media only screen and (min-device-width: 661px)
 	and (orientation: portrait)
 	and (max-device-width: 768px) {
+
+	#banner {
+		background-position-y: -5em;
+	}
 
 	#latest-video {
 		max-width: 400px;
@@ -174,6 +202,10 @@ article .image {
 @media only screen and (min-device-width: 661px)
 	and (orientation: landscape)
 	and (max-device-width: 768px) {
+
+	#banner {
+		background-position-y: -5em;
+	}
 
 	#headlines {
 		display: flex;
@@ -212,6 +244,11 @@ article .image {
 @media only screen and (min-device-width: 769px)
 	and (orientation: portrait)
 	and (max-device-width: 989px) {
+
+	#banner {
+		background-position-y: -5em;
+		height: 19.4em;
+	}
 
 	#current-game {
 		font-size: 1.4em;
@@ -258,6 +295,11 @@ article .image {
 	and (orientation: landscape)
 	and (max-device-width: 989px) {
 
+	#banner {
+		background-position-y: -5em;
+		height: 19.4em
+	}
+
 	#current-game {
 		font-size: 1.4em;
 	}
@@ -302,6 +344,10 @@ article .image {
 @media only screen and (min-device-width: 990px)
 	and (orientation: portrait) {
 
+	#banner {
+		height: 27em;
+	}
+
 	#current-game {
 		font-size: 2em;
 	}
@@ -345,6 +391,10 @@ article .image {
 /* >= 990px LANDSCAPE */
 @media only screen and (min-device-width: 990px)
 	and (orientation: landscape) {
+
+	#banner {
+		height: 27em;
+	}
 
 	#current-game {
 		font-size: 2em;

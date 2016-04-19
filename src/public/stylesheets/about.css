@@ -2,6 +2,10 @@ ul>li {
 	list-style-type: none;
 }
 
+.name {
+    text-decoration: none;
+}
+
 #description {
 	padding: 1em;
 }
@@ -19,16 +23,23 @@ ul>li {
 	padding: 0.5em;
 }
 
-#staff>h1, #players>h1 {
-	text-align: center;
-	background-color: black;
-	border: 4px solid #C70F17;
-	padding: 0.1em;
+.section-header {
+    text-align: center;
+    background-color: black;
+    border: 4px solid #C70F17;
+    padding: 0.1em;
+}
+
+.section-header a {
+    text-decoration: underline;
+    margin: 0.5em;
+    display: block;
 }
 
 #staff .name, .player .name {
 	font-weight: 800;
 	font-size: 1.3em;
+	color: #333;
 }
 
 #staff .title, .details{

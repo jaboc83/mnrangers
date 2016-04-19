@@ -1,15 +1,18 @@
 extends layout
 
+block meta
+	meta(property="og:image", content="http://mnrangers.com/images/banner.jpg")
+
 block content
 	table
 		tr
 			th.matchup-col Matchup
-			th.dateTime-col Date / Time
+			th.datetime-col Date / Time
 			th.location-col Location
 			th.result-col Result
 		each match in matchups
 			tr
-				td
+				td.matchup-col
 					div(class=(match.homeOrAway() == 'home'? '' : 'rangers'))
 						img(src = "/images/otherLogos/#{match.awayTeam.teamLogo}-32x32.png")
 						span #{match.awayTeam.teamName}
@@ -17,7 +20,7 @@ block content
 					div(class=(match.homeOrAway() == 'home'? 'rangers' : ''))
 						img(src = "/images/otherLogos/#{match.homeTeam.teamLogo}-32x32.png")
 						span #{match.homeTeam.teamName}
-				td #{match.dateTime}
-				td
+				td.datetime-col #{match.dateTime} 
+				td.location-col
 					a(href="https://goo.gl/maps/#{match.location.mapSlug}" target="_blank") #{match.location.locationName}
-				td #{match.result}
+				td.result-col(class=(match.rangersWon() === null ? "" : (match.rangersWon() ? 'win-grn' : 'loss-red'))) #{match.result}

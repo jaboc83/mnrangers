@@ -34,6 +34,13 @@ td {
 	text-align: center;
 }
 
+#banner {
+	background: no-repeat center url(../images/oxfordcc.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 23em;
+}
+
 .datetime-col {
 	width: 8em;
 }
@@ -84,6 +91,13 @@ td > a:hover {
 
 	table img {
 		display: none;
+	}
+
+	#banner {
+		/*
+		 *background-position-y: -2.8em;
+		 */
+		height: 10em
 	}
 }
 

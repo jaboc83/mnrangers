@@ -29,8 +29,8 @@ module.exports = [
     homeTeam: teams.rangers,
     dateTime: "Sat. April 23rd 1:00 PM",
     location: locations.rangers,
-    awayScore: null,
-    homeScore: null
+    awayScore: 82,
+    homeScore: 115
   }),
   new Matchup({
     awayTeam: teams.rangers,

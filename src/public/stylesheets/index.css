@@ -137,7 +137,6 @@ article .image {
 	}
 
 	#banner {
-		background-position-y: -2.8em;
 		height: 10em
 	}
 
@@ -149,7 +148,6 @@ article .image {
 	and (max-device-width: 660px) {
 
 	#banner {
-		background-position-y: -2.8em;
 		height: 11.5em
 	}
 
@@ -165,7 +163,6 @@ article .image {
 	and (max-device-width: 660px) {
 
 	#banner {
-		background-position-y: -2.8em;
 		height: 11.5em
 	}
 
@@ -181,7 +178,6 @@ article .image {
 	and (max-device-width: 768px) {
 
 	#banner {
-		background-position-y: -5em;
 	}
 
 	#latest-video {
@@ -219,7 +215,6 @@ article .image {
 	and (max-device-width: 768px) {
 
 	#banner {
-		background-position-y: -5em;
 	}
 
 	#headlines {
@@ -261,7 +256,6 @@ article .image {
 	and (max-device-width: 989px) {
 
 	#banner {
-		background-position-y: -5em;
 		height: 19.4em;
 	}
 
@@ -311,7 +305,6 @@ article .image {
 	and (max-device-width: 989px) {
 
 	#banner {
-		background-position-y: -5em;
 		height: 19.4em
 	}
 

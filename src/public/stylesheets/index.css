@@ -19,6 +19,21 @@
 	height: 15em;
 }
 
+.win-grn {
+	color: #0A0;
+}
+
+.win-grn:after {
+	content: " (W)"
+}
+
+.loss-red {
+	color: #A00;
+}
+
+.loss-red:after {
+	content: " (L)"
+}
 
 #game-track {
 	display: flex;
@@ -48,11 +63,11 @@
 	margin-bottom: 1em;
 }
 
-.game-summary>.results { text-align: center; }
-.outcome { font-weight: 600; }
+.result {
+	margin-top: 0.5em;
+}
+
 #current-game { flex-grow: 1; }
-.loss { color: #C70F17; }
-.win { color: #6D6; }
 
 #headlines article {
 	padding: 1em 0 1em 0;

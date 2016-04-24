@@ -10,29 +10,28 @@ block content
 	#schedule-snapshot
 		#game-track
 			#prev-game.game-summary
-				.date DEC 12 2015 4:00PM
-				.matchup 
-					span.away-team: strong Minnesota Rangers 
-					span.at @ 
-					br
-					span.home-team Iowa Hornets
-				.results 
-					span.score (113 - 119) 
-					span.outcome.loss L
-			#current-game.game-summary
 				.date #{matchups[0].dateTime}
 				.matchup 
 					span.away-team(class=(matchups[0].homeOrAway() == 'home'? '' : 'rangers')) #{matchups[0].awayTeam.teamName} 
 					span.at @  
-					br
-					span.home-team(class=(matchups[0].homeOrAway() == 'away'? '' : 'rangers')) #{matchups[0].homeTeam.teamName} 
-			#next-game.game-summary 
+					p
+						span.home-team(class=(matchups[0].homeOrAway() == 'away'? '' : 'rangers')) #{matchups[0].homeTeam.teamName} 
+					p.result
+						span(class=(matchups[0].rangersWon() ? 'win-grn':'loss-red')) #{matchups[0].result}
+			#current-game.game-summary
 				.date #{matchups[1].dateTime}
 				.matchup 
 					span.away-team(class=(matchups[1].homeOrAway() == 'home'? '' : 'rangers')) #{matchups[1].awayTeam.teamName} 
 					span.at @  
-					br
-					span.home-team(class=(matchups[1].homeOrAway() == 'away'? '' : 'rangers')) #{matchups[1].homeTeam.teamName}
+					p
+						span.home-team(class=(matchups[1].homeOrAway() == 'away'? '' : 'rangers')) #{matchups[1].homeTeam.teamName} 
+			#next-game.game-summary 
+				.date #{matchups[2].dateTime}
+				.matchup 
+					span.away-team(class=(matchups[2].homeOrAway() == 'home'? '' : 'rangers')) #{matchups[2].awayTeam.teamName} 
+					span.at @  
+					p
+						span.home-team(class=(matchups[2].homeOrAway() == 'away'? '' : 'rangers')) #{matchups[2].homeTeam.teamName}
 	#headlines
 		article
 			.image

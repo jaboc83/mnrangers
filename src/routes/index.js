@@ -28,9 +28,25 @@ router.get('/', function(req, res, next) {
 router.get('/about', function(req, res, next) {
 	res.render('about', {
 		title: 'MN Rangers Basketball About the Team',
-		page: 'about',
-		staff: staffArray,
+		page: 'about'
+	});
+});
+
+/* GET roster page */
+router.get('/roster', function(req, res, next) {
+	res.render('roster', {
+		title: 'MN Rangers Basketball Team Roster',
+		page: 'roster',
 		players: playerArray
+	});
+});
+
+/* GET front office page */
+router.get('/frontoffice', function(req, res, next) {
+	res.render('frontoffice', {
+		title: 'MN Rangers Basketball Front Office',
+		page: 'frontoffice',
+		staff: staffArray
 	});
 });
 

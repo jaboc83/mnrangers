@@ -1,0 +1,16 @@
+extends layout
+
+block meta
+	meta(property="og:image", content="http://mnrangers.com/images/banner.jpg")
+
+block content
+	#staff
+		.section-header
+			h1.white-text Rangers Staff
+		ul
+			each member in staff
+				li.staff-member
+					img.photo(src="../images/profiles/#{member.img}")
+					.name #{member.name}
+					.title #{member.title}
+					.bio #{member.bio}

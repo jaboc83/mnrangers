@@ -1,0 +1,168 @@
+ul>li {
+	list-style-type: none;
+}
+
+.name {
+    text-decoration: none;
+}
+
+#players {
+	padding: 0.5em;
+}
+
+.section-header {
+    text-align: center;
+    background-color: black;
+    border: 4px solid #C70F17;
+    padding: 0.1em;
+}
+
+.section-header a {
+    text-decoration: underline;
+    margin: 0.5em;
+    display: block;
+}
+
+.player .name {
+	font-weight: 800;
+	font-size: 1.3em;
+	color: #333;
+}
+
+.player {
+	padding: 0.5em;
+	background-color: #EEE;
+	border: 1px #AAA solid;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 22em;
+}
+
+.player .number::after {
+	content: " • ";
+}
+
+.player .photo {
+	width: 100%;
+	border-radius: 0.3em;
+}
+
+.details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.number, .position {
+	font-size: 1.3em;
+}
+
+.vitals {
+	min-width: 6em;
+}
+
+.height, .weight {
+	font-style: italic;
+}
+
+.experience {
+	border-top: 1px solid #999;
+	margin-top: 0.5em;
+	padding-top: 0.5em;
+}
+
+.experience li {
+	font-size: 0.8em;
+    font-weight: 600;
+    padding-left: 1em;
+}
+
+@media only screen and (max-device-width: 532px) {
+	#players>h1 {
+		font-size: 1.8em;
+	}
+
+}
+
+@media only screen and (min-device-width: 533px)
+	and (orientation: portrait)
+	and (max-device-width: 660px) {
+
+	.player {
+		max-width: 30em;
+	}
+
+}
+
+
+@media only screen and (min-device-width: 533px)
+	and (orientation:landscape)
+	and (max-device-width: 660px) {
+
+}
+
+@media only screen and (min-device-width: 660px)
+	and (orientation: portrait)
+	and (max-device-width: 768px) {
+
+	.player {
+		margin: 0.5em;
+		max-width: 45%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (min-device-width: 660px)
+	and (orientation: landscape)
+	and (max-device-width: 768px) {
+
+	.player {
+		margin: 0.5em;
+		max-width: 45%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (min-device-width: 768px)
+	and (orientation: portrait)
+	and (max-device-width: 989px) {
+	.player {
+		margin: 0.5em;
+		max-width: 45%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (min-device-width: 768px)
+	and (orientation: landscape)
+	and (max-device-width: 989px) {
+	.player {
+		margin: 0.5em;
+		max-width: 45%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (min-device-width: 990px)
+	and (orientation: portrait) {
+	.player {
+		margin: 0.5em;
+		max-width: 45%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+
+@media only screen and (min-device-width: 990px)
+	and (orientation: landscape) {
+	.player {
+		margin: 0.5em;
+		max-width: 45%;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
+

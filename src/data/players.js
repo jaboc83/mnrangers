@@ -42,18 +42,6 @@ module.exports = [
       pastTeams: ["Dakota County Tech"]
     }),
     new Player({
-      id: "dariuscampbell",
-      img: "DariusCampbell.jpg",
-      name: "Darius Campbell",
-      number: 21,
-      position: "SG/SF",
-      primaryPosition: "SG",
-      hometown: "Saint Paul, MN",
-      height: "6'3\"",
-      weight: 195,
-      pastTeams: [""]
-    }),
-    new Player({
       id: "kennybass",
       img: "KennyBass.jpg",
       name: "Kenny Bass",

@@ -59,6 +59,14 @@ router.get('/schedule', function(req, res, next) {
 	});
 });
 
+/* GET about page */
+router.get('/tickets', function(req, res, next) {
+	res.render('tickets', {
+		title: 'MN Rangers Basketball Purchase Tickets',
+		page: 'tickets'
+	});
+});
+
 /* GET headlines page */
 router.get('/headlines', function(req, res, next) {
 	res.render('headlines', {

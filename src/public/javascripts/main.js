@@ -46,11 +46,17 @@
     }
 
     var topLevelLinks = doc.getElementsByClassName("toplink");
+    var llcontainers = doc.getElementsByClassName("lowerlink-container")
 
     for (var i = topLevelLinks.length - 1; i >= 0; i-- ) {
 	topLevelLinks[i].onclick = (function(i) {
 	    return function() {
 		var child = topLevelLinks[i].getElementsByClassName('lowerlink-container')[0]
+		for(var j=llcontainers.length - 1; j >= 0; j--) {
+		    if(llcontainers[j] !== child) {
+			llcontainers[j].style.display = 'none';
+		    }
+		}
 		toggleElemVisibility(child);
 	    };
 	}(i));

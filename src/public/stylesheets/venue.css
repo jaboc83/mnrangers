@@ -1,0 +1,95 @@
+#description {
+	padding: 1em;
+}
+
+#description-header {
+	text-align: center;
+	font-size: 1.3em;
+}
+
+#description p {
+	text-align: justify;
+}
+
+#description img {
+		width: 60%;
+    margin: 1em;
+    display: block;
+    border-radius: 0.3em;
+		float: right;
+}
+
+#details {
+	margin-top: 1em;
+}
+
+a.button {
+    font-size: 1.3em;
+    padding: 0.5em;
+    background-color: #666;
+    border: 1px solid #aaa;
+    border-radius: 0.3em;
+    display: inline-block;
+    width: 3.2em;
+    margin: 1em auto;
+    color: #DDD;
+}
+
+@media only screen and (max-device-width: 532px) {
+	#description img {
+		float: clear;
+		width: 100%;
+		margin: 1em auto;
+	}
+}
+
+@media only screen and (min-device-width: 533px)
+	and (orientation: portrait)
+	and (max-device-width: 660px) {
+	#description img {
+		float: clear;
+		width: 100%;
+		margin: 1em auto;
+	}
+
+}
+
+
+@media only screen and (min-device-width: 533px)
+	and (orientation:landscape)
+	and (max-device-width: 660px) {
+	#description img {
+		float: clear;
+		width: 100%;
+		margin: 1em auto;
+	}
+}
+
+@media only screen and (min-device-width: 660px)
+	and (orientation: portrait)
+	and (max-device-width: 768px) {
+}
+
+@media only screen and (min-device-width: 660px)
+	and (orientation: landscape)
+	and (max-device-width: 768px) {
+}
+
+@media only screen and (min-device-width: 768px)
+	and (orientation: portrait)
+	and (max-device-width: 989px) {
+}
+
+@media only screen and (min-device-width: 768px)
+	and (orientation: landscape)
+	and (max-device-width: 989px) {
+}
+
+@media only screen and (min-device-width: 990px)
+	and (orientation: portrait) {
+}
+
+@media only screen and (min-device-width: 990px)
+	and (orientation: landscape) {
+}
+

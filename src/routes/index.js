@@ -59,11 +59,19 @@ router.get('/schedule', function(req, res, next) {
 	});
 });
 
-/* GET about page */
+/* GET tickets page */
 router.get('/tickets', function(req, res, next) {
 	res.render('tickets', {
 		title: 'MN Rangers Basketball Purchase Tickets',
 		page: 'tickets'
+	});
+});
+
+/* GET venue page */
+router.get('/venue', function(req, res, next) {
+	res.render('venue', {
+		title: 'Oxford Community Center',
+		page: 'venue'
 	});
 });
 

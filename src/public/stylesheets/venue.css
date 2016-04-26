@@ -33,6 +33,7 @@ a.button {
     width: 3.2em;
     margin: 1em auto;
     color: #DDD;
+    text-align: center;
 }
 
 .link, .link:hover, .link:visited {

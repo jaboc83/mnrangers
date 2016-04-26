@@ -12,6 +12,15 @@
 	color: #C70F17;
 }
 
+#info {
+	padding 1em;
+
+}
+
+#main-content>hr {
+	margin: 1em 0;
+}
+
 @media only screen and (max-device-width: 532px) {
 }
 

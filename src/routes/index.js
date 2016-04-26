@@ -75,6 +75,14 @@ router.get('/venue', function(req, res, next) {
 	});
 });
 
+/* GET broadcast info page */
+router.get('/broadcastinfo', function(req, res, next) {
+	res.render('broadcastinfo', {
+		title: 'MN Rangers Basketball Live Broadcast',
+		page: 'broadcastinfo'
+	});
+});
+
 /* GET headlines page */
 router.get('/headlines', function(req, res, next) {
 	res.render('headlines', {

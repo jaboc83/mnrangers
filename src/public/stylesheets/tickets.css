@@ -25,7 +25,7 @@ a.button {
     color: #DDD;
 }
 
-.link {
+.link, .link:hover, .link:visited {
 	color: #C70F17;
 }
 

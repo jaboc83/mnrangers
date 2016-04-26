@@ -1,26 +1,16 @@
-#description {
-	padding: 1em;
+.info {
+	padding: 1em 1em 2em 1em;
+	max-width: 30em;
+	margin: 0 auto;
 }
 
-#description-header {
+.info-header {
 	text-align: center;
 	font-size: 1.3em;
 }
 
-#description p {
+.info p {
 	text-align: justify;
-}
-
-#description img {
-		width: 60%;
-    margin: 1em;
-    display: block;
-    border-radius: 0.3em;
-		float: right;
-}
-
-#details {
-	margin-top: 1em;
 }
 
 a.button {
@@ -29,32 +19,18 @@ a.button {
     background-color: #666;
     border: 1px solid #aaa;
     border-radius: 0.3em;
-    display: inline-block;
-    width: 3.2em;
+    display: block;
+    width: 9.5em;
     margin: 1em auto;
     color: #DDD;
 }
 
-.link, .link:hover, .link:visited {
-    color: #C70F17;
-}
-
 @media only screen and (max-device-width: 532px) {
-	#description img {
-		float: clear;
-		width: 100%;
-		margin: 1em auto;
-	}
 }
 
 @media only screen and (min-device-width: 533px)
 	and (orientation: portrait)
 	and (max-device-width: 660px) {
-	#description img {
-		float: clear;
-		width: 100%;
-		margin: 1em auto;
-	}
 
 }
 
@@ -62,11 +38,6 @@ a.button {
 @media only screen and (min-device-width: 533px)
 	and (orientation:landscape)
 	and (max-device-width: 660px) {
-	#description img {
-		float: clear;
-		width: 100%;
-		margin: 1em auto;
-	}
 }
 
 @media only screen and (min-device-width: 660px)

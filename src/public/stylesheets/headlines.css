@@ -31,17 +31,26 @@ article h2 {
 }
 
 @media only screen and (max-device-width: 532px) {
+	article p {
+		margin-bottom: 1em;
+	}
 }
 
 @media only screen and (min-device-width: 533px)
 	and (orientation: portrait)
 	and (max-device-width: 660px) {
+	article p {
+		margin-bottom: 1em;
+	}
 }
 
 
 @media only screen and (min-device-width: 533px)
 	and (orientation:landscape)
 	and (max-device-width: 660px) {
+	article p {
+		margin-bottom: 1em;
+	}
 }
 
 @media only screen and (min-device-width: 660px)

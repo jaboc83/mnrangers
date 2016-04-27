@@ -1,9 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var depthChart = require('../data/depthChart.js');
-var staffArray = require('../data/staff.js');
-var playerArray = require('../data/players.js');
-var matchupArray = require('../data/matchups.js');
+var depthChart = require('../data/depthChart');
+var staffArray = require('../data/staff');
+var playerArray = require('../data/players');
+var matchupArray = require('../data/matchups');
+var stats = require('../data/stats');
 var nearGames = [];
 
 for (var i = matchupArray.length; i >= 0; i--) {
@@ -128,7 +129,7 @@ router.get('/headlines/:headlineId', function(req, res, next) {
 	});
 });
 
-/* GET headline page */
+/* GET depth chart page */
 router.get('/depth', function(req, res, next) {
 	res.render('depth', {
 		title: 'MN Rangers Basketball Depth Chart',
@@ -137,5 +138,12 @@ router.get('/depth', function(req, res, next) {
 	});
 });
 
-
+/* GET stats page */
+router.get('/stats', function(req, res, next) {
+	res.render('stats', {
+		title: 'MN Rangers Basketball Stats',
+		page: 'stats',
+		stats: stats
+	});
+});
 module.exports = router;

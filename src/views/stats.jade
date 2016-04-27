@@ -1,0 +1,47 @@
+extends layout
+
+block meta
+	meta(property="og:image", content="http://mnrangers.com/images/banner.jpg")
+
+block content
+		#stats
+			table
+				thead
+					tr
+						th Number
+						th Name
+						th GS
+						th FGM
+						th FGA
+						th 3PM
+						th 3PA
+						th FTM
+						th FTA
+						th ORB
+						th DRB
+						th AST
+						th STL
+						th BLK
+						th TO
+						th PF
+						th PTS
+				tbody
+					each line in stats
+						tr
+							td #{line.number}
+							td #{line.name}
+							td #{line.starts}
+							td #{line.fgm}
+							td #{line.fga}
+							td #{line.threem}
+							td #{line.threea} 
+							td #{line.ftm}
+							td #{line.fta}
+							td #{line.orb}
+							td #{line.drb}
+							td #{line.ast}
+							td #{line.stl}
+							td #{line.blk}
+							td #{line.to}
+							td #{line.pf}
+							td #{line.pts}

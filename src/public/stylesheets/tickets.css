@@ -1,16 +1,17 @@
 .info {
-	padding: 1em 1em 2em 1em;
-	max-width: 30em;
-	margin: 0 auto;
+    padding: 1em 1em 2em 1em;
+    max-width: 40em;
+    margin: 0 auto;
 }
 
 .info-header {
-	text-align: center;
-	font-size: 1.3em;
+    text-align: center;
+    font-size: 1.3em;
 }
 
 .info p {
-	text-align: justify;
+    text-align: justify;
+    margin-bottom: 0.5em;
 }
 
 a.button {

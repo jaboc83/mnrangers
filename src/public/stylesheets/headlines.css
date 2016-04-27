@@ -1,3 +1,8 @@
+article li {
+	padding: 0 1em;
+	list-style: square;
+}
+
 article {
 	min-height: 15em;
 	margin: 0.5em 0.5em 1em;

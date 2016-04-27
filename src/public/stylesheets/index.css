@@ -75,14 +75,13 @@
 }
 
 #headlines article:nth-child(1) .image {
-	background: no-repeat url(../images/headlines/broncos1.jpg);
+	background: no-repeat url(../images/headlines/teambvsr.jpg);
 	background-size: 100%;
 }
 
 #headlines article:nth-child(3) .image {
-	background: no-repeat url(../images/logo.svg);
-	background-size: 50%;
-	background-position: 50px;
+	background: no-repeat url(../images/headlines/broncos1.jpg);
+	background-size: 100%;
 }
 
 article .image {

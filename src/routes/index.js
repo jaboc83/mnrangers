@@ -7,8 +7,8 @@ var matchupArray = require('../data/matchups');
 var stats = require('../data/stats');
 var nearGames = [];
 
-for (var i = matchupArray.length; i >= 0; i--) {
-	if (matchupArray[1].rangersWon() !== null || i === 0) {
+for (var i = matchupArray.length - 1; i >= 0; i--) {
+	if (matchupArray[i].rangersWon() !== null || i === 0) {
 		nearGames.push(matchupArray[i]);
 		nearGames.push(matchupArray[i + 1]);
 		nearGames.push(matchupArray[i + 2]);

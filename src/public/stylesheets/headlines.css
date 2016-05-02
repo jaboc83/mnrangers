@@ -5,8 +5,9 @@ article li {
 
 article {
 	min-height: 15em;
-	margin: 0.5em 0.5em 1em;
+	margin: 0 0.5em 0.5em 1em;
 	text-align: justify;
+	padding-top: 0.5em;
 }
 
 article img {

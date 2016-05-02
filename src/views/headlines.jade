@@ -4,18 +4,6 @@ block meta
 	meta(property="og:image", content="http://mnrangers.com/images/banner.jpg")
 
 block content
-	include headlines/160501_summarystorm.jade
-	hr
-	include headlines/160427_previewstorm.jade
-	hr
-	include headlines/160423_summarybroncos.jade
-	hr
-	include headlines/160418_previewbroncos.jade
-	hr
-	include headlines/160416_seasonopener.jade
-	hr
-	include headlines/160109_newowner.jade
-	hr
-	include headlines/151107_roster.jade
-	hr
-	include headlines/150920_exhibition.jade
+	each article in articles
+		| !{article.content}
+		hr

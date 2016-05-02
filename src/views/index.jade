@@ -35,15 +35,15 @@ block content
 	#headlines
 		article
 			.image
-			h2 May 01, 2016
-			h1 Summary: Rangers vs. Storm
-			a.see-more.red-text(href='../headlines/#050116') more...
+			h2 #{headlines[0].date.toDateString()}
+			h1 #{headlines[0].title}
+			a.see-more.red-text(href='../headlines/##{headlines[0].dateNum}') more...
 		hr
 		article
 			.image
-			h2 April 27, 2016
-			h1 Preview: Rangers vs. Storm
-			a.see-more.red-text(href='../headlines/#042716') more...
+			h2 #{headlines[1].date.toDateString()}
+			h1 #{headlines[1].title}
+			a.see-more.red-text(href='../headlines/##{headlines[1].dateNum}') more...
 	hr
 	#latest-video
 		h3 Latest Videos

@@ -1,3 +1,6 @@
+var fs = require('fs');
+var path = require('path');
+var jade = require('jade');
 var express = require('express');
 var router = express.Router();
 var depthChart = require('../data/depthChart');
@@ -6,6 +9,30 @@ var playerArray = require('../data/players');
 var matchupArray = require('../data/matchups');
 var stats = require('../data/stats');
 var nearGames = [];
+var headlinesPath = path.join(__dirname, '../views/headlines');
+var headlines = fs.readdirSync(headlinesPath)
+	.map(function (filename) {
+		var rgImg = /img\(src=['"]\.\.\/images\/([^\)]+)["']\)/
+		var rgTitle = /h1([^\n]+)\n/
+		var fullpath = headlinesPath + '/' + filename;
+		var content = fs.readFileSync(fullpath).toString();
+
+		return {
+			dateNum: filename.split('_')[0],
+			date: parseDate(filename.split('_')[0]),
+			image: rgImg.exec(content)[1],
+			title: rgTitle.exec(content)[1],
+			content: jade.render(content)
+		};
+	})
+	.sort()
+	.reverse();
+
+function parseDate(date) {
+	var rx = /(\d{2})(\d{2})(\d{2})/
+	parsedDate = date.match(rx);
+	return new Date(2000 + (+parsedDate[1]), (+parsedDate[2])-1, (+parsedDate[3]));
+}
 
 for (var i = matchupArray.length - 1; i >= 0; i--) {
 	if (matchupArray[i].rangersWon() !== null || i === 0) {
@@ -21,7 +48,8 @@ router.get('/', function(req, res, next) {
 	res.render('index', {
 		title: 'MN Rangers Basketball',
 		page: 'index',
-		matchups: nearGames
+		matchups: nearGames,
+		headlines: headlines.slice(0,2)
 	});
 });
 
@@ -88,7 +116,8 @@ router.get('/broadcastinfo', function(req, res, next) {
 router.get('/headlines', function(req, res, next) {
 	res.render('headlines', {
 		title: 'MN Rangers Basketball Headlines',
-		page: 'headlines'
+		page: 'headlines',
+		articles: headlines
 	});
 });
 

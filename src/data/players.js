@@ -152,18 +152,6 @@ module.exports = [
       pastTeams: ["NDSU", "Texas State"]
     }),
     new Player({
-      id: "ricophillips",
-      img: "RicoPhillips.jpg",
-      name: "Rico Phillips",
-      number: 3,
-      position: "PG",
-      primaryPosition: "PG",
-      hometown: "Saint Paul, Minnesota",
-      height: "6'0\"",
-      weight: 165,
-      pastTeams: ["Clinton CC"]
-    }),
-    new Player({
       id: "jordanosberg",
       img: "JordanOsberg.jpg",
       name: "Jordan Osberg",

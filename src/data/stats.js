@@ -49,9 +49,6 @@ module.exports = [
   generateStatLine("160423", "sammitchell", [
     00,01,02,00,01,02,02,00,03,00,02,00,00,01,04
   ]),
-  generateStatLine("160423", "ricophillips", [
-    00,02,06,00,03,00,00,00,03,00,01,01,00,00,04
-  ]),
   generateStatLine("160423", "quintonjackson", [
     01,01,04,00,01,01,04,00,01,01,01,00,00,00,03
   ]),

@@ -22,7 +22,7 @@ module.exports = {
   storm: {
     //mapSlug: "6JBJVnYyvRA2",
     mapSlug: "9oKahR1AAtP2",
-    locationName: "New Testament Academy Gym"
+    locationName: "Milwaukee Math & Science Academy"
   },
 };
 

@@ -10,9 +10,9 @@ article {
 	padding-top: 0.5em;
 }
 
-article img {
-	float: right;
+article>img {
 	width: 13em;
+	float: right;
 	padding-left: 0.5em;
 }
 
@@ -29,6 +29,19 @@ article h2 {
 	font-size: 0.7em;
 	padding-right: 1em;
 	text-transform: uppercase;
+}
+
+figure {
+	float: right;
+	margin: 1em;
+	width: 13em;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+figure img {
+	width: 100%
 }
 
 @media only screen and (max-device-width: 532px) {

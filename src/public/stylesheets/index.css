@@ -75,12 +75,12 @@
 }
 
 #headlines article:nth-child(1) .image {
-	background: no-repeat url(../images/headlines/dom.jpg);
+	background: no-repeat url(../images/headlines/rocandlolar.jpg);
 	background-size: 100%;
 }
 
 #headlines article:nth-child(3) .image {
-	background: no-repeat url(../images/headlines/teambvsr.jpg);
+	background: no-repeat url(../images/headlines/dom.jpg);
 	background-size: 100%;
 }
 

@@ -20,7 +20,8 @@ module.exports = {
     locationName: "Eagan Community Center"
   },
   storm: {
-    mapSlug: "6JBJVnYyvRA2",
+    //mapSlug: "6JBJVnYyvRA2",
+    mapSlug: "9oKahR1AAtP2",
     locationName: "New Testament Academy Gym"
   },
 };

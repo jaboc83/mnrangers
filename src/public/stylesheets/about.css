@@ -11,7 +11,7 @@
 	text-align: justify;
 }
 
-#description a {
+#description a.btn {
     font-size: 1.3em;
     padding: 0.5em;
     background-color: #666;

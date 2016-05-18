@@ -1,0 +1,144 @@
+article li {
+	padding: 0 1em;
+	list-style: square;
+}
+
+article {
+	min-height: 15em;
+	margin: 0 0.5em 0.5em 1em;
+	text-align: justify;
+	padding-top: 0.5em;
+}
+
+article>img {
+	width: 13em;
+	float: right;
+	padding-left: 0.5em;
+}
+
+article h1 {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0 1em;
+}
+
+article h2 {
+	color: #800;
+	text-align: right;
+	font-size: 0.7em;
+	padding-right: 1em;
+	text-transform: uppercase;
+}
+
+article h3 {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+figure {
+	float: right;
+	margin: 1em;
+	width: 13em;
+	text-align: center;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+figure img {
+	width: 100%
+}
+
+@media only screen and (max-device-width: 532px) {
+	article p {
+		margin-bottom: 1em;
+	}
+}
+
+@media only screen and (min-device-width: 533px)
+	and (orientation: portrait)
+	and (max-device-width: 660px) {
+	article p {
+		margin-bottom: 1em;
+	}
+}
+
+
+@media only screen and (min-device-width: 533px)
+	and (orientation:landscape)
+	and (max-device-width: 660px) {
+	article p {
+		margin-bottom: 1em;
+	}
+}
+
+@media only screen and (min-device-width: 660px)
+	and (orientation: portrait)
+	and (max-device-width: 768px) {
+		article {
+			min-height: 15em;
+		}
+
+		article p {
+			padding: 1em;
+		}
+}
+
+@media only screen and (min-device-width: 660px)
+	and (orientation: landscape)
+	and (max-device-width: 768px) {
+		article {
+			min-height: 15em;
+		}
+
+		article p {
+			padding: 1em;
+		}
+}
+
+@media only screen and (min-device-width: 768px)
+	and (orientation: portrait)
+	and (max-device-width: 989px) {
+		article {
+			min-height: 15em;
+		}
+
+		article p {
+			padding: 1em;
+		}
+}
+
+@media only screen and (min-device-width: 768px)
+	and (orientation: landscape)
+	and (max-device-width: 989px) {
+		article {
+			min-height: 15em;
+		}
+
+		article p {
+			padding: 1em;
+		}
+}
+
+@media only screen and (min-device-width: 990px)
+	and (orientation: portrait) {
+		article {
+			min-height: 15em;
+		}
+
+		article p {
+			padding: 1em;
+		}
+}
+
+@media only screen and (min-device-width: 990px)
+	and (orientation: landscape) {
+		article {
+			min-height: 15em;
+		}
+
+		article p {
+			padding: 1em;
+		}
+}
+

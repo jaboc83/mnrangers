@@ -152,9 +152,12 @@ router.get('/players/:playerId', function(req, res, next) {
 
 /* GET headline page */
 router.get('/headlines/:headlineId', function(req, res, next) {
-	res.render('headlines/' + req.params.headlineId, {
+	res.render('headline', {
 		title: 'MN Rangers Basketball News Story',
-		page: 'headline'
+		page: 'headline',
+		article: headlines.filter(function (h) {
+			return h.dateNum === req.params.headlineId
+		})[0]
 	});
 });
 

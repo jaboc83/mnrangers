@@ -74,19 +74,9 @@
 	cursor: pointer;
 }
 
-#headlines article:nth-child(1) .image {
-	background: no-repeat url(../images/headlines/clovers.jpg);
-	background-size: 100%;
-}
-
-#headlines article:nth-child(3) .image {
-	background: no-repeat url(../images/headlines/roc1.jpg);
-	background-size: 100%;
-}
-
-article .image {
-	width: 15em;
-	height: 8em;
+article img {
+	max-width: 15em;
+	max-height: 8em;
 	display: none;
 	border-radius: 0.5em;
 }
@@ -200,7 +190,7 @@ article .image {
 		text-align: center;
 	}
 
-	article .image {
+	article img {
 		display: inline-block;
 	}
 	.see-more {
@@ -233,7 +223,7 @@ article .image {
 		text-align: center;
 	}
 
-	article .image {
+	article img {
 		display: inline-block;
 	}
 	.see-more {
@@ -282,7 +272,7 @@ article .image {
 		text-align: center;
 	}
 
-	article .image {
+	article img {
 		display: inline-block;
 	}
 	.see-more {
@@ -331,7 +321,7 @@ article .image {
 		text-align: center;
 	}
 
-	article .image {
+	article img {
 		display: inline-block;
 	}
 	.see-more {
@@ -379,7 +369,7 @@ article .image {
 		text-align: center;
 	}
 
-	article .image {
+	article img {
 		display: inline-block;
 	}
 	.see-more {
@@ -429,7 +419,7 @@ article .image {
 		text-align: center;
 	}
 
-	article .image {
+	article img {
 		display: inline-block;
 
 	}

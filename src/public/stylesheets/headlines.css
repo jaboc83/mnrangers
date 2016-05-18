@@ -31,6 +31,11 @@ article h2 {
 	text-transform: uppercase;
 }
 
+article h3 {
+	font-size: 0.8em;
+	text-align: center;
+}
+
 figure {
 	float: right;
 	margin: 1em;

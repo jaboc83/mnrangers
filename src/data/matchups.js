@@ -58,8 +58,8 @@ module.exports = [
     homeTeam: teams.clovers,
     dateTime: "Sat. May 21nd 7:00 PM",
     location: locations.clovers,
-    awayScore: null,
-    homeScore: null
+    awayScore: 104,
+    homeScore: 110
   }),
   new Matchup({
     id: "160528",

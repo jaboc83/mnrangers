@@ -26,12 +26,9 @@ var headlines = fs.readdirSync(headlinesPath)
 		};
 	})
 	.sort(function (a, b) {
-		//console.log(a.dateNum + " < " + b.dateNum + " = " + (a.dateNum < b.dateNum));
 		return a.dateNum < b.dateNum ? -1 : 1
 	})
 	.reverse();
-
-console.log(headlines.map(function (item){return item.dateNum;}));
 
 function parseDate(date) {
 	var rx = /(\d{2})(\d{2})(\d{2})/

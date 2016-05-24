@@ -4,8 +4,8 @@ module.exports = {
     locationName: "Oxford Community Center"
   },
   clovers: {
-    mapSlug: "",
-    locationName: "TBD"
+    mapSlug: "ujaoBktQTqt",
+    locationName: "Hyde Park Academy High School"
   },
   fury: {
     mapSlug: "RNKvdSsQiUG2",
@@ -20,7 +20,6 @@ module.exports = {
     locationName: "Eagan Community Center"
   },
   storm: {
-    //mapSlug: "6JBJVnYyvRA2",
     mapSlug: "9oKahR1AAtP2",
     locationName: "Milwaukee Math & Science Academy"
   },

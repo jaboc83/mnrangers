@@ -4,14 +4,15 @@ article li {
 }
 
 article {
-	min-height: 15em;
+	min-height: 17em;
 	margin: 0 0.5em 0.5em 1em;
 	text-align: justify;
 	padding-top: 0.5em;
 }
 
 article>img {
-	width: 13em;
+	max-width: 13em;
+	max-height: 13em;
 	float: right;
 	padding-left: 0.5em;
 }
@@ -34,6 +35,7 @@ article h2 {
 article h3 {
 	font-size: 0.8em;
 	text-align: center;
+	margin-bottom: 0.5em;
 }
 
 figure {
@@ -76,7 +78,7 @@ figure img {
 	and (orientation: portrait)
 	and (max-device-width: 768px) {
 		article {
-			min-height: 15em;
+			min-height: 17em;
 		}
 
 		article p {
@@ -88,7 +90,7 @@ figure img {
 	and (orientation: landscape)
 	and (max-device-width: 768px) {
 		article {
-			min-height: 15em;
+			min-height: 17em;
 		}
 
 		article p {
@@ -100,7 +102,7 @@ figure img {
 	and (orientation: portrait)
 	and (max-device-width: 989px) {
 		article {
-			min-height: 15em;
+			min-height: 17em;
 		}
 
 		article p {
@@ -112,7 +114,7 @@ figure img {
 	and (orientation: landscape)
 	and (max-device-width: 989px) {
 		article {
-			min-height: 15em;
+			min-height: 17em;
 		}
 
 		article p {
@@ -123,7 +125,7 @@ figure img {
 @media only screen and (min-device-width: 990px)
 	and (orientation: portrait) {
 		article {
-			min-height: 15em;
+			min-height: 17em;
 		}
 
 		article p {
@@ -134,7 +136,7 @@ figure img {
 @media only screen and (min-device-width: 990px)
 	and (orientation: landscape) {
 		article {
-			min-height: 15em;
+			min-height: 17em;
 		}
 
 		article p {

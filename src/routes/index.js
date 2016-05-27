@@ -180,4 +180,14 @@ router.get('/stats', function(req, res, next) {
 		stats: stats
 	});
 });
+
+/* GET sponsors page */
+router.get('/sponsors', function(req, res, next) {
+	res.render('sponsors', {
+		title: 'MN Rangers Basketball Stats',
+		page: 'sponsors'
+	});
+});
+
+
 module.exports = router;

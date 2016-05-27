@@ -67,7 +67,10 @@ html
 
 					a.toplink(href='/community') Community
 
-					a.toplink(href='/about') About
+					.toplink(href='/about') About
+						.lowerlink-container(style='display:none;')
+							a.lowerlink(href='/about') The Organization
+							a.lowerlink(href='/sponsors') Our Sponsors
 			block banner
 			#main-content
 				block content

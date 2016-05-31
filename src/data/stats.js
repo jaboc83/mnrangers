@@ -28,9 +28,6 @@ module.exports = [
   generateStatLine("160423", "damienlolar", [
     00,07,07,02,02,05,10,01,07,05,04,01,00,00,21
   ]),
-  generateStatLine("160423", "dylanhale", [
-    00,07,10,02,03,02,04,02,05,03,02,04,01,00,18
-  ]),
   generateStatLine("160423", "kennybass", [
     01,07,10,00,00,03,07,03,07,03,02,08,01,02,17
   ]),

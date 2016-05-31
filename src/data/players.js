@@ -140,18 +140,6 @@ module.exports = [
       pastTeams: ["Kentucky Wesleyan"]
     }),
     new Player({
-      id: "dylanhale",
-      img: "DylanHale.jpg",
-      name: "Dylan Hale",
-      number: 30,
-      position: "PG/SG",
-      primaryPosition: "SG",
-      hometown: "Saint Paul, Minnesota",
-      height: "6'2\"",
-      weight: 180,
-      pastTeams: ["NDSU", "Texas State"]
-    }),
-    new Player({
       id: "jordanosberg",
       img: "JordanOsberg.jpg",
       name: "Jordan Osberg",

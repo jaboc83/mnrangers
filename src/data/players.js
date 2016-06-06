@@ -1,3 +1,21 @@
+var dateFormat = require('dateformat');
+function calculateAge(dob)
+{
+	var birthMonth = dob.getMonth();
+	var birthYear = dob.getFullYear();
+	var birthDay = dob.getDate();
+  todayDate = new Date();
+  todayYear = todayDate.getFullYear();
+  todayMonth = todayDate.getMonth();
+  todayDay = todayDate.getDate();
+  age = todayYear - birthYear;
+
+  if (todayMonth < birthMonth - 1) { age--; }
+  if (birthMonth - 1 == todayMonth && todayDay < birthDay) { age--; }
+
+  return age;
+}
+
 function Player(options) {
   this.id = options.id;
   this.img = options.img;
@@ -9,12 +27,17 @@ function Player(options) {
   this.hometown = options.hometown;
   this.height = options.height;
   this.weight = options.weight;
+  this.dob = options.dob;
   this.pastTeams = options.pastTeams;
 }
 
 Player.prototype.getShortName = function() {
   return this.shortName || this.name;
 };
+
+Player.prototype.getDobWithAge = function() {
+  return dateFormat(this.dob,"mm/dd/yyyy") + " (" + calculateAge(this.dob) + ")";
+}
 
 module.exports = [
     new Player({
@@ -27,6 +50,7 @@ module.exports = [
       hometown: "Gary, IN",
       height: "6'1\"",
       weight: 185,
+      dob: new Date("03/04/88"),
       pastTeams: [""]
     }),
     new Player({
@@ -39,7 +63,8 @@ module.exports = [
       hometown: "College Station, TX",
       height: "6'4\"",
       weight: 200,
-      pastTeams: ["Dakota County Tech"]
+      dob: new Date("01/26/93"),
+      pastTeams: ["Dakota County Technical College"]
     }),
     new Player({
       id: "kennybass",
@@ -51,6 +76,7 @@ module.exports = [
       hometown: "Chicago,IL",
       height: "6'2\"",
       weight: 190,
+      dob: new Date("12/09/87"),
       pastTeams: [""]
     }),
     new Player({
@@ -63,6 +89,7 @@ module.exports = [
       hometown: "Saint Paul, MN",
       height: "6'4\"",
       weight: 250,
+      dob: new Date("03/10/90"),
       pastTeams: [""]
     }),
     new Player({
@@ -75,6 +102,7 @@ module.exports = [
       hometown: "Minneapolis, MN",
       height: "6'0\"",
       weight: 160,
+      dob: new Date("06/28/89"),
       pastTeams: []
     }),
     new Player({
@@ -88,7 +116,8 @@ module.exports = [
       hometown: "Saint Paul, MN",
       height: "6'3\"",
       weight: 215,
-      pastTeams: []
+      dob: new Date("01/14/87"),
+      pastTeams: ["Rochester Community & Technical College"]
     }),
     new Player({
       id: "quintonjackson",
@@ -100,6 +129,7 @@ module.exports = [
       hometown: "Minneapolis, MN",
       height: "6'1\"",
       weight: 175,
+      dob: new Date("11/22/85"),
       pastTeams: ["Minneapolis Community & Technical College"]
     }),
     new Player({
@@ -109,10 +139,11 @@ module.exports = [
       number: 50,
       position: "SF/PF",
       primaryPosition: "SF",
-      hometown: "Kansas",
+      hometown: "Arkansas City, KS",
       height: "6'4\"",
       weight: 240,
-      pastTeams: ["Colorado 14ers"]
+      dob: new Date("01/11/84"),
+      pastTeams: ["Colorado 14ers","West Texas A&M","Cowley Community College"]
     }),
     new Player({
       id: "sammitchell",
@@ -124,6 +155,7 @@ module.exports = [
       hometown: "Brooklyn, NY",
       height: "6'1\"",
       weight: 168,
+      dob: new Date("05/30/92"),
       pastTeams: []
     }),
     new Player({
@@ -137,6 +169,7 @@ module.exports = [
       hometown: "Minneapolis, Minnesota",
       height: "6'8\"",
       weight: 240,
+      dob: new Date("06/07/91"),
       pastTeams: ["Kentucky Wesleyan"]
     }),
     new Player({
@@ -149,6 +182,45 @@ module.exports = [
       hometown: "Saint Paul, Minnesota",
       height: "6'2\"",
       weight: 185,
-      pastTeams: ["Riverland CC"]
+      dob: new Date("11/27/90"),
+      pastTeams: ["Riverland Community College"]
     })
+    /*new Player({
+      id: "demarcodavis",
+      img: "DemarcoDavis.jpg",
+      name: "Demarco Davis",
+      shortName: "Dee Davis",
+      number: "00",
+      position: "SG",
+      primaryPosition: "SG/SF",
+      hometown: "",
+      height: "6'4\"",
+      weight: 190,
+      pastTeams: []
+    }),*/
+    /*new Player({
+      id: "estantyler",
+      img: "EstanTyler.jpg",
+      name: "Estan Tyler",
+      number: "00",
+      position: "PG/SG",
+      primaryPosition: "PG",
+      hometown: "",
+      height: "6'1\"",
+      weight: 180,
+      pastTeams: []
+    }),*/
+    /*new Player({
+      id: "demetriuswilliams",
+      img: "DemetriusWilliams.jpg",
+      name: "Demetrius Williams",
+      shortName: "Meech Williams",
+      number: "00",
+      position: "PG/SG",
+      primaryPosition: "PG",
+      hometown: "",
+      height: "6'1\"",
+      weight: 170,
+      pastTeams: []
+    }),*/
   ];

@@ -100,9 +100,9 @@ module.exports = [
   new Matchup({
     id: "160625",
     awayTeam: teams.rangers,
-    homeTeam: teams.clovers,
+    homeTeam: teams.lions,
     dateTime: "Sat. June 25th 6:00 PM",
-    location: locations.clovers,
+    location: locations.lions,
     awayScore: null,
     homeScore: null
   }),
@@ -144,7 +144,7 @@ module.exports = [
   }),
   new Matchup({
     id: "160806",
-    awayTeam: teams.clovers,
+    awayTeam: teams.lions,
     homeTeam: teams.rangers,
     dateTime: "Sat. August 6th 1:00 PM",
     location: locations.rangers,

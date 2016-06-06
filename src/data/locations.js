@@ -11,6 +11,10 @@ module.exports = {
     mapSlug: "RNKvdSsQiUG2",
     locationName: "Adele and Robert Stern Center"
   },
+  lions: {
+    mapSlug: "6moDRxdN2QD2",
+    locationName: "Lincoln College"
+  },
   rangers: {
     mapSlug: "88GHQXp9k852",
     locationName: "Oxford Community Center"

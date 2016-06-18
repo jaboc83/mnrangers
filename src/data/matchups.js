@@ -10,6 +10,9 @@ function Matchup(options) {
   this.awayScore = options.awayScore;
   this.homeScore = options.homeScore;
   this.result = (this.awayScore || "__") + " - " + (this.homeScore || "__");
+  if(this.result.indexOf('f') !== -1) {
+    this.result = 'Forfeit'
+  }
 }
 
 Matchup.prototype.homeOrAway = function () {
@@ -19,6 +22,14 @@ Matchup.prototype.homeOrAway = function () {
 Matchup.prototype.rangersWon = function () {
   if(!this.homeScore && !this.awayScore) {
     return null;
+  }
+
+  if(this.homeScore === 'f') {
+    return this.homeOrAway() === "home" ? false : true
+  }
+
+  if(this.awayScore === 'f') {
+    return this.homeOrAway() === "away" ? false : true
   }
 
   return this.homeOrAway() === "home" ? this.homeScore > this.awayScore : this.awayScore > this.homeScore;
@@ -85,8 +96,8 @@ module.exports = [
     homeTeam: teams.rangers,
     dateTime: "Sat. June 11th 1:00 PM",
     location: locations.rangersAlternate,
-    awayScore: null,
-    homeScore: null
+    awayScore: 'f',
+    homeScore: 0
   }),
   new Matchup({
     id: "160611",

@@ -51,7 +51,7 @@ module.exports = [
       id: "bjmoore",
       img: "BJMoore.jpg",
       name: "BJ Moore",
-      number: 25,
+      number: 21,
       position: "PG/SG",
       primaryPosition: "PG",
       hometown: "Gary, IN",

@@ -1,9 +1,12 @@
 var dateFormat = require('dateformat');
 function calculateAge(dob)
 {
-	var birthMonth = dob.getMonth();
-	var birthYear = dob.getFullYear();
-	var birthDay = dob.getDate();
+  if(!dob) {
+    return 'N/A'
+  }
+  var birthMonth = dob.getMonth();
+  var birthYear = dob.getFullYear();
+  var birthDay = dob.getDate();
   todayDate = new Date();
   todayYear = todayDate.getFullYear();
   todayMonth = todayDate.getMonth();
@@ -36,6 +39,10 @@ Player.prototype.getShortName = function() {
 };
 
 Player.prototype.getDobWithAge = function() {
+  if(!this.dob) {
+    return "N/A";
+  }
+
   return dateFormat(this.dob,"mm/dd/yyyy") + " (" + calculateAge(this.dob) + ")";
 }
 
@@ -176,7 +183,7 @@ module.exports = [
       id: "jordanosberg",
       img: "JordanOsberg.jpg",
       name: "Jordan Osberg",
-      number: 32,
+      number: 30,
       position: "PG/SG",
       primaryPosition: "SG",
       hometown: "Saint Paul, Minnesota",
@@ -184,43 +191,46 @@ module.exports = [
       weight: 185,
       dob: new Date("11/27/90"),
       pastTeams: ["Riverland Community College"]
-    })
-    /*new Player({
+    }),
+    new Player({
       id: "demarcodavis",
       img: "DemarcoDavis.jpg",
       name: "Demarco Davis",
       shortName: "Dee Davis",
-      number: "00",
+      number: "32",
       position: "SG",
       primaryPosition: "SG/SF",
       hometown: "",
       height: "6'4\"",
       weight: 190,
+      dob: null,
       pastTeams: []
-    }),*/
-    /*new Player({
+    }),
+    new Player({
       id: "estantyler",
       img: "EstanTyler.jpg",
       name: "Estan Tyler",
-      number: "00",
+      number: "03",
       position: "PG/SG",
       primaryPosition: "PG",
       hometown: "",
       height: "6'1\"",
       weight: 180,
+      dob: null,
       pastTeams: []
-    }),*/
-    /*new Player({
+    }),
+    new Player({
       id: "demetriuswilliams",
       img: "DemetriusWilliams.jpg",
       name: "Demetrius Williams",
       shortName: "Meech Williams",
-      number: "00",
+      number: "25",
       position: "PG/SG",
       primaryPosition: "PG",
       hometown: "",
       height: "6'1\"",
       weight: 170,
+      dob: null,
       pastTeams: []
-    }),*/
+    })
   ];

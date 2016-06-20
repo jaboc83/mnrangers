@@ -198,26 +198,27 @@ module.exports = [
       name: "Demarco Davis",
       shortName: "Dee Davis",
       number: "32",
-      position: "SG",
-      primaryPosition: "SG/SF",
-      hometown: "",
+      position: "SG/SF",
+      primaryPosition: "SF",
+      hometown: "St. Paul, MN",
       height: "6'4\"",
       weight: 190,
-      dob: null,
-      pastTeams: []
+      dob: new Date("03/23/88"),
+      pastTeams: ['Minneapolis Community College', 'Rochester College']
     }),
     new Player({
       id: "estantyler",
       img: "EstanTyler.jpg",
       name: "Estan Tyler",
-      number: "03",
+      number: "3",
       position: "PG/SG",
       primaryPosition: "PG",
-      hometown: "",
+      hometown: "St. Paul, MN",
       height: "6'1\"",
       weight: 180,
-      dob: null,
-      pastTeams: []
+      dob: new Date("02/26/93"),
+      pastTeams: ['University of Missouri - Kansas City',
+        'University of North Dakota']
     }),
     new Player({
       id: "demetriuswilliams",
@@ -227,10 +228,10 @@ module.exports = [
       number: "25",
       position: "PG/SG",
       primaryPosition: "PG",
-      hometown: "",
+      hometown: "Chicago, IL",
       height: "6'1\"",
       weight: 170,
-      dob: null,
-      pastTeams: []
+      dob: new Date("10/07/87"),
+      pastTeams: ['Southwest High School', 'Anoka Ramsey Community College']
     })
   ];

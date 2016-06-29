@@ -68,16 +68,24 @@ td > a:hover {
 	color: #0A0;
 }
 
-.win-grn:after {
-	content: " (W)"
+.win-grn:before {
+	content: "(W) "
 }
 
 .loss-red {
 	color: #A00;
 }
 
-.loss-red:after {
-	content: " (L)"
+.loss-red:before {
+	content: "(L) "
+}
+
+.video-link {
+	cursor: pointer;
+}
+
+.no-video-link {
+	cursor: not-allowed;
 }
 
 @media only screen and (max-device-width: 532px) {
@@ -89,7 +97,7 @@ td > a:hover {
 		width: 8em;
 	}
 
-	table img {
+	table .matchup-col img {
 		display: none;
 	}
 
@@ -113,7 +121,7 @@ td > a:hover {
 		width: 8em;
 	}
 
-	table img {
+	table .matchup-col img {
 		display: none;
 	}
 }
@@ -130,7 +138,7 @@ td > a:hover {
 		width: 8em;
 	}
 
-	table img {
+	table .matchup-col img {
 		display: none;
 	}
 }

@@ -17,13 +17,19 @@ block content
 			tr
 				td.matchup-col
 					div(class=(match.homeOrAway() == 'home'? '' : 'rangers'))
-						img(src = "/images/otherLogos/#{match.awayTeam.teamLogo}-32x32.png")
+						img(src = "/images/otherLogos/#{match.awayTeam.teamLogo}-32x32.png" alt="away team logo")
 						span #{match.awayTeam.teamName}
 					div.at @
 					div(class=(match.homeOrAway() == 'home'? 'rangers' : ''))
-						img(src = "/images/otherLogos/#{match.homeTeam.teamLogo}-32x32.png")
+						img(src = "/images/otherLogos/#{match.homeTeam.teamLogo}-32x32.png" alt="home team logo")
 						span #{match.homeTeam.teamName}
 				td.datetime-col #{match.dateTime} 
 				td.location-col
 					a(href="https://goo.gl/maps/#{match.location.mapSlug}" target="_blank") #{match.location.locationName}
 				td.result-col(class=(match.rangersWon() === null ? "" : (match.rangersWon() ? 'win-grn' : 'loss-red'))) #{match.result}
+					br
+					if match.video
+						a(href="#{match.video}" target="_blank")
+							img(src="/images/social/youtube.png" alt="youtube logo" class="video-link") 
+					else
+							img(src="/images/social/youtube-grey.png" alt="grayed out youtube logo" class="no-video-link") 

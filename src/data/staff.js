@@ -1,31 +1,9 @@
 module.exports = [
   {
-    img: "michael.png",
-    name: "Michael Wright",
-    title: "Owner / President of Basketball Operations",
-    bio: "Michael Wright, President of Basketball Operations, " +
-      "is the founder of Minnesota Rangers Basketball. Michael is an " +
-      "NBA Free Agent with the goals of helping the gentlemen on the " +
-      "team not only improve themselves and their communities, but also " +
-      "has the intentions of helping the players gain exposure for the " +
-      "betterment of their athletic careers."
-  },
-  {
-    img: "ahmed.png",
-    name: "Ahmed Bachelani",
-    title: "Owner / Legal",
-    bio: "Ahmed Bachelani, the legal liaison is an attorney in the " +
-      "Twin Cities. He has been with the Minnesota Rangers since " +
-      "August 2015 and ensures that all of the transactions meet " +
-      "the legal standards in the State of Minnesota. Ahmed's goal " +
-      "is to make sure that the Rangers Organzation continues to " +
-      "grow and develop players to achieve their goals."
-  },
-  {
     img: "latisha.png",
     name: "Latisha Moening",
     title: "Owner / Community Relations Director",
-    bio: "Latisha Moening is the Secretary on the Board of Directors as well " +
+    bio: "Latisha Moening is the owner as well " +
       "as the Community Relations Director for the organization. Latisha’s " +
       "goals for the team vary with her different positions. As the Community " +
       "Relations Director her goals are geared more toward developing a healthy " +
@@ -69,11 +47,5 @@ module.exports = [
       "freshman year in college. Still a student herself, Shaunice's goals " +
       "as assistant coach is to assist head coach Sandifer as well as bring a " +
       "fresh, young perspective to the team."
-  },
-  {
-    img: "roumy.png",
-    name: "Roumy Desir",
-    title: "Treasurer / Community Relations Assistant",
-    bio: ""
   }
 ];

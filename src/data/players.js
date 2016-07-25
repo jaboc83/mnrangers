@@ -207,20 +207,6 @@ module.exports = [
       pastTeams: ['Minneapolis Community College', 'Rochester College']
     }),
     new Player({
-      id: "estantyler",
-      img: "EstanTyler.jpg",
-      name: "Estan Tyler",
-      number: "3",
-      position: "PG/SG",
-      primaryPosition: "PG",
-      hometown: "St. Paul, MN",
-      height: "6'1\"",
-      weight: 180,
-      dob: new Date("02/26/93"),
-      pastTeams: ['University of Missouri - Kansas City',
-        'University of North Dakota']
-    }),
-    new Player({
       id: "demetriuswilliams",
       img: "DemetriusWilliams.jpg",
       name: "Demetrius Williams",

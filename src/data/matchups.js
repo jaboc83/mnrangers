@@ -135,7 +135,7 @@ module.exports = [
     location: locations.rangers,
     awayScore: 98,
     homeScore: 101,
-    video: null
+    video: 'https://youtu.be/OyoFXcJHkKg'
   }),
   new Matchup({
     id: "160716",
@@ -145,7 +145,7 @@ module.exports = [
     location: locations.rangers,
     awayScore: 128,
     homeScore: 135,
-    video: null
+    video: 'https://youtu.be/mKvFTQnhAYU'
   }),
   new Matchup({
     id: "160723",

@@ -115,7 +115,7 @@ module.exports = [
     location: locations.rangers,
     awayScore: 101,
     homeScore: 122,
-    video: null
+    video: 'https://youtu.be/Gklf_csqekg'
   }),
   new Matchup({
     id: "160625",

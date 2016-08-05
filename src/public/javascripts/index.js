@@ -1,5 +1,5 @@
 /* Navigate to schedule page logic */
-(function (getElem, global) {
+/*(function (getElem, global) {
 	var gameTrack = getElem("game-track");
 	function goToSchedule() {
 		global.location.href = "/schedule";
@@ -14,7 +14,7 @@
 		gameTrack.attachEvent("onclick", goToSchedule);
 	}
 
-}(document.getElementById.bind(document), window));
+}(document.getElementById.bind(document), window));*/
 
 /* Navigate to headlines page logic */
 (function (getElem, global) {

@@ -173,8 +173,8 @@ module.exports = [
     homeTeam: teams.rangers,
     dateTime: "Sat. August 6th 1:00 PM",
     location: locations.rangers,
-    awayScore: null,
-    homeScore: null,
+    awayScore: 101,
+    homeScore: 111,
     video: null
   })
 ];

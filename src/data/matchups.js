@@ -175,6 +175,6 @@ module.exports = [
     location: locations.rangers,
     awayScore: 101,
     homeScore: 111,
-    video: null
+    video: 'https://youtu.be/GKY1si--JLY'
   })
 ];

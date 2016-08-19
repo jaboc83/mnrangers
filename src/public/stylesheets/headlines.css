@@ -10,7 +10,7 @@ article {
 	padding-top: 0.5em;
 }
 
-article>img {
+article>img, article>a>img {
 	max-width: 13em;
 	max-height: 13em;
 	float: right;

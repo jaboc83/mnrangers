@@ -189,5 +189,13 @@ router.get('/sponsors', function(req, res, next) {
 	});
 });
 
+/* GET full image */
+router.get('/fullimage/*', function(req, res, next) {
+	res.render('fullimage', {
+		title: 'MN Rangers Basketball Media',
+		page: 'fullimage',
+		imagepath: req.params[0]
+	});
+});
 
 module.exports = router;

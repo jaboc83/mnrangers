@@ -24,12 +24,16 @@ block content
 	#latest-video
 		h3 Latest Videos
 		#videos
+			.video(id='rogers-highlights')
+				//iframe(width="560",height="315",src="https://www.youtube.com/embed/K6ww_DqAkF4",frameborder="0",allowfullscreeni=true)
+				iframe(width="100%",height="100%",src="https://www.youtube.com/embed/K6ww_DqAkF4",frameborder="0",allowfullscreeni=true)
 			.video(id='all-in-a-days-work')
 				script.
 					(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
 				.fb-video(data-allowfullscreen='1', data-href='/MNRangersBasketball/videos/vb.798066073581304/960348484019728/?type=3')
-			.video(id='fb-training')
-				script.
-					(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
-				.fb-video(data-allowfullscreen='1' data-href='/MNRangersBasketball/videos/vb.798066073581304/949596008428309/?type=3')
+			//
+				.video(id='fb-training')
+					script.
+						(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));
+					.fb-video(data-allowfullscreen='1' data-href='/MNRangersBasketball/videos/vb.798066073581304/949596008428309/?type=3')
 		a.see-more.red-text(href='../community') see more...

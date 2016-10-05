@@ -231,11 +231,12 @@ article img {
 	}
 	#videos {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
 	}
 
 	.video {
-		width: 47%;
+		padding: 1em;
 	}
 }
 
@@ -280,11 +281,12 @@ article img {
 	}
 	#videos {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
 	}
 
 	.video {
-		width: 47%;
+		padding: 1em;
 	}
 }
 
@@ -329,11 +331,12 @@ article img {
 	}
 	#videos {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
 	}
 
 	.video {
-		width: 47%;
+		padding: 1em;
 	}
 }
 
@@ -377,11 +380,12 @@ article img {
 	}
 	#videos {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
 	}
 
 	.video {
-		width: 47%;
+		padding: 1em;
 	}
 }
 
@@ -429,11 +433,12 @@ article img {
 
 	#videos {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-around;
 	}
 
 	.video {
-		width: 47%;
+		padding: 1em;
 	}
 }
 

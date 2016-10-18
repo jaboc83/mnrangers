@@ -17,6 +17,7 @@
 	background-size: cover;
 	width: 100%;
 	height: 15em;
+	background-position-y: -10px;
 }
 
 .win-grn {

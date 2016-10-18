@@ -3,6 +3,10 @@
 	padding: 1em;
 }
 
+#main-content img {
+	width: 100%;
+}
+
 @media only screen and (max-device-width: 532px) {
 }
 

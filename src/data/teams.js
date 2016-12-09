@@ -11,6 +11,10 @@ module.exports = {
     teamName: "Cedar Valley CourtKings",
     teamLogo: "courtKings"
   },
+  dream: {
+    teamName: "Indiana Dream",
+    teamLogo: "dream"
+  },
   fury: {
     teamName: "Chicago Fury",
     teamLogo: "fury"
@@ -18,6 +22,14 @@ module.exports = {
   lions: {
     teamName: "Lincoln Lions",
     teamLogo: "lions"
+  },
+  panthers: {
+    teamName: "Springfield Panthers",
+    teamLogo: "panthers"
+  },
+  pitbulls: {
+    teamName: "Minneapolis Pitbulls",
+    teamLogo: "pitbulls"
   },
   rangers: {
     teamName: "Minnesota Rangers",

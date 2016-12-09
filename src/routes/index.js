@@ -83,10 +83,15 @@ router.get('/frontoffice', function(req, res, next) {
 
 /* GET schedule page */
 router.get('/schedule', function(req, res, next) {
+	year = req.query.year || 2017
+	matches = matchupArray.filter(function (value) {
+		return value.season == year;
+	});
 	res.render('schedule', {
 		title: 'MN Rangers Basketball Game Schedule',
 		page: 'schedule',
-		matchups: matchupArray
+		matchups: matches,
+		year: year
 	});
 });
 

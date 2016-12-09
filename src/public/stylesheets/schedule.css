@@ -40,7 +40,6 @@ td {
 	width: 100%;
 	height: 23em;
 }
-
 .datetime-col {
 	width: 8em;
 }
@@ -86,6 +85,18 @@ td > a:hover {
 
 .no-video-link {
 	cursor: not-allowed;
+}
+
+a.btn {
+    font-size: 1.3em;
+    padding: 0.5em;
+    background-color: #666;
+    border: 1px solid #aaa;
+    border-radius: 0.3em;
+    display: block;
+    width: 12em;
+    margin: 1em auto;
+    color: #DDD;
 }
 
 @media only screen and (max-device-width: 532px) {

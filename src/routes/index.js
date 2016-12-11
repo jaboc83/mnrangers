@@ -6,8 +6,11 @@ var router = express.Router();
 var depthChart = require('../data/depthChart');
 var staffArray = require('../data/staff');
 var playerArray = require('../data/players');
+playerArray.sort(function (a, b) {
+	return a.number < b.number;
+});
 var matchupArray = require('../data/matchups');
-var stats = require('../data/stats');
+//var stats = require('../data/stats');
 var nearGames = [];
 var headlinesPath = path.join(__dirname, '../views/headlines');
 var headlines = fs.readdirSync(headlinesPath)

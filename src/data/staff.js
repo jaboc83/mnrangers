@@ -14,28 +14,22 @@ module.exports = [
       "healthy future for the organization."
   },
   {
-    img: "jill.png",
-    name: "Jill Fisher",
-    title: "Team Strength & Conditioning Coach",
-    bio: "Jill Fisher is the head trainer and a member of the coaching staff " +
-      "for the Minnesota Rangers. Jill works with each athlete to identify " +
-      "their strengths and weaknesses, personalizes conditioning plans, and " +
-      "leads team workouts to promote team cohesiveness. Jill's goals for " +
-      "the team is to educate the athletes about the importance of strength " +
-      "training, to work with the coaches to achieve success as a basketball " +
-      "team, and for the organization to give back to the community."
-  },
-  {
     img: "jason.png",
     name: "Jason Sandifer",
-    title: "Head Coach",
+    title: "General Manager / Head Coach",
     bio: "Jason Sandifer is a native of Saint Paul Minnesota and former " +
       "student/athlete at Vanguard University where he played point guard. " +
-      "As the head coach of the Minnesota Rangers Jason's duties include " +
+      "As the General Manager and Head Coach of the Minnesota Rangers Jason's duties include " +
       "individual and team skill development, creating a highly disciplined " +
       "team that displays self control on and off the court, and motivating " +
       "players to be and do their best. Jason's vision is to help influence " +
       "the players to be positive, productive role models in the community."
+  },
+  {
+    img: "michaelthomas.png",
+    name: "Michael Thomas",
+    title: "Development and Outreach Manager",
+    bio: "TBD"
   },
   {
     img: "shaunice.png",

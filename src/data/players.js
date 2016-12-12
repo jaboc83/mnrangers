@@ -108,7 +108,7 @@ module.exports = [
       position: "PG/SG",
       primaryPosition: "PG",
       hometown: "Minneapolis, MN",
-      height: "6'0\"",
+      height: "6'1\"",
       weight: 180,
       dob: new Date("11/22/85"),
       pastTeams: ["2016 Minnesota Rangers", "Minneapolis Community & Technical College", "North High School"]

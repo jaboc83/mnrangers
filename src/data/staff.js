@@ -3,7 +3,7 @@ module.exports = [
     img: "latisha.png",
     name: "Latisha Moening",
     title: "Owner / Community Relations Director",
-    bio: "Latisha Moening is the owner as well " +
+    bio: "Latisha Moening is an owner as well " +
       "as the Community Relations Director for the organization. Latisha’s " +
       "goals for the team vary with her different positions. As the Community " +
       "Relations Director her goals are geared more toward developing a healthy " +
@@ -12,6 +12,17 @@ module.exports = [
       "improve the players individually, as a team, and the organization itself " +
       "to help boost chances of advancement in their athletic careers and a " +
       "healthy future for the organization."
+  },
+  {
+    img: "jake.png",
+    name: "Jake Moening",
+    title: "Owner / Photographer / Developer",
+    bio: "Jake Moening is an owner as well " +
+      "as the being the team's official photographer. He is also in charge of " +
+      "building and maintaining the team website and the social media. With a " +
+      "background in software engineering he brings a technical perspective to the " +
+      "organization and is trying to push a strong online presence for the Rangers."
+
   },
   {
     img: "jason.png",
@@ -29,7 +40,11 @@ module.exports = [
     img: "michaelthomas.png",
     name: "Michael Thomas",
     title: "Development and Outreach Manager",
-    bio: "TBD"
+    bio: "Michael Thomas spent plenty of time on the court playing for Rainy " +
+      "River and Anoka Ramsey as well as the Ultimate Hoops National Tournament. " +
+      "That experience plus his education in Marketing and Advertisement makes " +
+      "him a valuable part of the Rangers organization where he is dedicated to " +
+      "spreading the word about the Rangers and helping find new and exciting partnerships."
   },
   {
     img: "shaunice.png",

@@ -194,19 +194,6 @@ module.exports = [
       pastTeams: ["Danville Area Community College", "Anoka Ramsey Community College", "Mayville State University"]
     }),
     new Player({
-      id: "larrybrown",
-      img: "LarryBrown.jpg",
-      name: "Larry Brown",
-      number: 0,
-      position: "SF",
-      primaryPosition: "SF",
-      hometown: "St. Paul, MN",
-      height: "6'6\"",
-      weight: 195,
-      dob: new Date("06/04/90"),
-      pastTeams: ["University of Minnesota Crookston"]
-    }),
-    new Player({
       id: "ajwilson",
       img: "AJWilson.jpg",
       name: "AJ Wilson",

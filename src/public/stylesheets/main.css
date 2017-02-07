@@ -108,6 +108,10 @@ hr {
 }
 
 .toplink, .lowerlink { color: #FFF; }
+a.externlink {
+    color: #F11;
+    text-transform: uppercase;
+}
 
 .red-text { color: #C70F17; }
 .red-bg { background-color: #C70F17; }
@@ -409,7 +413,7 @@ hr {
 		display: flex;
 	}
 
-	.toplink, .lowerlink {
+	.toplink, .lowerlink, a.externlink {
 		font-size: 1.1em;
 	}
 
@@ -459,7 +463,7 @@ hr {
 		display: flex;
 	}
 
-	.toplink, .lowerlink {
+	.toplink, .lowerlink, a.externlink {
 		font-size: 1.1em;
 	}
 
@@ -509,7 +513,7 @@ hr {
 		line-height: 5em;
 	}
 
-	.toplink, .lowerlink {
+	.toplink, .lowerlink, a.externlink {
 		font-size: 1.3em;
 	}
 
@@ -559,7 +563,7 @@ hr {
 		line-height: 5em;
 	}
 
-	.toplink, .lowerlink {
+	.toplink, .lowerlink, a.externlink {
 		font-size: 1.3em;
 	}
 

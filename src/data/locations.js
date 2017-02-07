@@ -29,12 +29,8 @@ module.exports = {
       locationName: ""
     },
     rangers: {
-      mapSlug: "88GHQXp9k852",
-      locationName: "Oxford Community Center"
-    },
-    rangersAlternate: {
-      mapSlug: "",
-      locationName: ""
+      mapSlug: "HQgTr2raCMU2",
+      locationName: "High School for Recording Arts"
     },
     storm: {
       mapSlug: "",

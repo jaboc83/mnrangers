@@ -28,7 +28,7 @@ module.exports = {
     teamLogo: "panthers"
   },
   pitbulls: {
-    teamName: "Minneapolis Pitbulls",
+    teamName: "Minnesota Pitbulls",
     teamLogo: "pitbulls"
   },
   rangers: {

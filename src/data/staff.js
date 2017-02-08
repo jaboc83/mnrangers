@@ -37,16 +37,6 @@ module.exports = [
       "the players to be positive, productive role models in the community."
   },
   {
-    img: "michaelthomas.png",
-    name: "Michael Thomas",
-    title: "Development and Outreach Manager",
-    bio: "Michael Thomas spent plenty of time on the court playing for Rainy " +
-      "River and Anoka Ramsey as well as the Ultimate Hoops National Tournament. " +
-      "That experience plus his education in Marketing and Advertisement makes " +
-      "him a valuable part of the Rangers organization where he is dedicated to " +
-      "spreading the word about the Rangers and helping find new and exciting partnerships."
-  },
-  {
     img: "shaunice.png",
     name: 'Shaunice "Niecy" Fentress',
     title: "Assistant Coach",
@@ -56,5 +46,15 @@ module.exports = [
       "freshman year in college. Still a student herself, Shaunice's goals " +
       "as assistant coach is to assist head coach Sandifer as well as bring a " +
       "fresh, young perspective to the team."
+  },
+  {
+    img: "michaelthomas.png",
+    name: "Michael Thomas",
+    title: "Development and Outreach Manager",
+    bio: "Michael Thomas spent plenty of time on the court playing for Rainy " +
+      "River and Anoka Ramsey as well as the Ultimate Hoops National Tournament. " +
+      "That experience plus his education in Marketing and Advertisement makes " +
+      "him a valuable part of the Rangers organization where he is dedicated to " +
+      "spreading the word about the Rangers and helping find new and exciting partnerships."
   }
 ];

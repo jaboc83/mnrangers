@@ -25,8 +25,8 @@ module.exports = {
       locationName: ""
     },
     pitbulls: {
-      mapSlug: "",
-      locationName: ""
+      mapSlug: "aHEopWs95LQ2",
+      locationName: "North Hennepin Community College"
     },
     rangers: {
       mapSlug: "HQgTr2raCMU2",

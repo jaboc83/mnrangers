@@ -8,13 +8,17 @@ module.exports = {
       mapSlug: "",
       locationName: ""
     },
+    courtKings: {
+      mapSlug: "C7bB2GpCTau",
+      locationName: "Cedar Valley SportsPlex"
+    },
     dream: {
-      mapSlug: "",
-      locationName: ""
+      mapSlug: "pCELw3pxpQC2",
+      locationName: "Southside Middle School"
     },
     fury: {
-      mapSlug: "",
-      locationName: ""
+      mapSlug: "VSUB6uYTBj32",
+      locationName: "Red Shield Center"
     },
     lions: {
       mapSlug: "XCogUsE2gBx",

@@ -201,7 +201,7 @@ module.exports = [
     location: locations['2017'].lions,
     awayScore: 114,
     homeScore: 110,
-    video: null,
+    video: 'https://www.youtube.com/watch?v=wPUvAPcUpes',
     season: 2017
   }),
   new Matchup({

@@ -199,8 +199,8 @@ module.exports = [
     homeTeam: teams.lions,
     dateTime: "Sat. April 1st 5PM",
     location: locations['2017'].lions,
-    awayScore: null,
-    homeScore: null,
+    awayScore: 114,
+    homeScore: 110,
     video: null,
     season: 2017
   }),
@@ -210,8 +210,8 @@ module.exports = [
     homeTeam: teams.pitbulls,
     dateTime: "Sat. April 8th 12:50PM",
     location: locations['2017'].pitbulls,
-    awayScore: null,
-    homeScore: null,
+    awayScore: 0,
+    homeScore: 'f',
     video: null,
     season: 2017
   }),

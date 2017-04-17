@@ -5,8 +5,8 @@ module.exports = {
   },
   2017: {
     broncos: {
-      mapSlug: "",
-      locationName: ""
+      mapSlug: "C3chbc1Qt9s",
+      locationName: "Pact Charter School"
     },
     courtKings: {
       mapSlug: "C7bB2GpCTau",

@@ -306,9 +306,9 @@ module.exports = [
   new Matchup({
     id: "170603",
     awayTeam: teams.rangers,
-    homeTeam: teams.storm,
+    homeTeam: teams.elite,
     dateTime: "Sat. June 3rd (TIME TBD)",
-    location: locations.tbd,
+    location: locations['2017'].elite,
     awayScore: null,
     homeScore: null,
     video: null,

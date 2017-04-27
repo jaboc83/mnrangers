@@ -16,6 +16,10 @@ module.exports = {
       mapSlug: "pCELw3pxpQC2",
       locationName: "Southside Middle School"
     },
+    elite: {
+      mapSlug: "vLYznPNaBRz",
+      locationName: "North Central University"
+    },
     fury: {
       mapSlug: "VSUB6uYTBj32",
       locationName: "Red Shield Center"

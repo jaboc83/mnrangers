@@ -19,6 +19,10 @@ module.exports = {
     teamName: "North Minneapolis Eagles",
     teamLogo: "eagles"
   },
+  elite: {
+    teamName: "TC Elite",
+    teamLogo: "elite"
+  },
   fury: {
     teamName: "Chicago Fury",
     teamLogo: "fury"

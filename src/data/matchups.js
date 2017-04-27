@@ -223,7 +223,7 @@ module.exports = [
     location: locations['2017'].rangers,
     awayScore: 120,
     homeScore: 141,
-    video: null,
+    video: "https://youtu.be/DIK2_Xzg1Tw",
     season: 2017
   }),
   new Matchup({

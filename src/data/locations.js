@@ -13,8 +13,8 @@ module.exports = {
       locationName: "Cedar Valley SportsPlex"
     },
     dream: {
-      mapSlug: "pCELw3pxpQC2",
-      locationName: "Southside Middle School"
+      mapSlug: "6mLCvumQmUU2",
+      locationName: "Boys & Girls Club"
     },
     elite: {
       mapSlug: "vLYznPNaBRz",

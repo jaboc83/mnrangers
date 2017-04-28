@@ -252,7 +252,7 @@ module.exports = [
     id: "170506",
     awayTeam: teams.rangers,
     homeTeam: teams.dream,
-    dateTime: "Sat. May 6th (TIME TBD)",
+    dateTime: "Sat. May 6th 7PM",
     location: locations['2017'].dream,
     awayScore: null,
     homeScore: null,

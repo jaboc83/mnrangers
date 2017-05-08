@@ -254,8 +254,8 @@ module.exports = [
     homeTeam: teams.dream,
     dateTime: "Sat. May 6th 7PM",
     location: locations['2017'].dream,
-    awayScore: null,
-    homeScore: null,
+    awayScore: 128,
+    homeScore: 120,
     video: null,
     season: 2017
   }),

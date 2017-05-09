@@ -272,7 +272,7 @@ module.exports = [
   }),
   new Matchup({
     id: "170514",
-    awayTeam: teams.lions,
+    awayTeam: teams.pitbulls,
     homeTeam: teams.rangers,
     dateTime: "Sun. May 14th 3PM",
     location: locations['2017'].rangers,

@@ -256,7 +256,7 @@ module.exports = [
     location: locations['2017'].dream,
     awayScore: 128,
     homeScore: 120,
-    video: null,
+    video: "https://www.youtube.com/watch?v=KFcEFhwVBoM",
     season: 2017
   }),
   new Matchup({

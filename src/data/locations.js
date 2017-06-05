@@ -21,8 +21,8 @@ module.exports = {
       locationName: "North Central University"
     },
     fury: {
-      mapSlug: "VSUB6uYTBj32",
-      locationName: "Red Shield Center"
+      mapSlug: "a8sEoLpLnBv",
+      locationName: "Russel Square Park"
     },
     lions: {
       mapSlug: "XCogUsE2gBx",

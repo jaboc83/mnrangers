@@ -267,7 +267,7 @@ module.exports = [
     location: locations['2017'].rangers,
     awayScore: 110,
     homeScore: 98,
-    video: "https://www.youtube.com/watch?v=lgmHRPScZFM",
+    video: "https://youtu.be/59NwBcfR36s",
     season: 2017
   }),
   new Matchup({
@@ -298,9 +298,9 @@ module.exports = [
     homeTeam: teams.rangers,
     dateTime: "Sun. May 21th 3PM",
     location: locations['2017'].rangers,
-    awayScore: null,
-    homeScore: null,
-    video: null,
+    awayScore: '126',
+    homeScore: '117',
+    video: 'https://www.youtube.com/watch?v=OVjWKt3ZrxE',
     season: 2017
   }),
   new Matchup({
@@ -309,8 +309,8 @@ module.exports = [
     homeTeam: teams.elite,
     dateTime: "Sat. June 3rd 4:30",
     location: locations['2017'].elite,
-    awayScore: null,
-    homeScore: null,
+    awayScore: 112,
+    homeScore: 102,
     video: null,
     season: 2017
   }),
@@ -320,8 +320,8 @@ module.exports = [
     homeTeam: teams.rangers,
     dateTime: "Sun. June 4th 3PM",
     location: locations['2017'].rangers,
-    awayScore: null,
-    homeScore: null,
+    awayScore: 110,
+    homeScore: 116,
     video: null,
     season: 2017
   }),
@@ -329,8 +329,8 @@ module.exports = [
     id: "170610",
     awayTeam: teams.rangers,
     homeTeam: teams.fury,
-    dateTime: "Sat. June 10th (TIME TBD)",
-    location: locations.tbd,
+    dateTime: "Sat. June 10th 1:30PM",
+    location: locations['2017'].fury,
     awayScore: null,
     homeScore: null,
     video: null,

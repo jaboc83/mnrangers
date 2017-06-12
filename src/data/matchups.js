@@ -331,9 +331,9 @@ module.exports = [
     homeTeam: teams.fury,
     dateTime: "Sat. June 10th 1:30PM",
     location: locations['2017'].fury,
-    awayScore: null,
-    homeScore: null,
-    video: null,
+    awayScore: 106,
+    homeScore: 147,
+    video: 'https://youtu.be/ibVB5bxB6bo',
     season: 2017
   }),
   new Matchup({

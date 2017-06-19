@@ -342,9 +342,9 @@ module.exports = [
     homeTeam: teams.courtKings,
     dateTime: "Sat. June 17th 7:30PM",
     location: locations['2017'].courtKings,
-    awayScore: null,
-    homeScore: null,
-    video: null,
+    awayScore: 108,
+    homeScore: 127,
+    video: 'https://youtu.be/4dphpX_ospY',
     season: 2017
   }),
   new Matchup({

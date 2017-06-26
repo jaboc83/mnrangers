@@ -33,8 +33,8 @@ module.exports = {
       locationName: ""
     },
     pitbulls: {
-      mapSlug: "aHEopWs95LQ2",
-      locationName: "North Hennepin Community College"
+      mapSlug: "LYskiML3ga62",
+      locationName: "Oxford Community Center (Downstairs)"
     },
     rangers: {
       mapSlug: "HQgTr2raCMU2",
